@@ -1,0 +1,23 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=752
+package.editor.height=279
+package.editor.width=644
+package.editor.x=543
+package.editor.y=115
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+target1.height=62
+target1.name=util
+target1.type=PackageTarget
+target1.width=80
+target1.x=160
+target1.y=10
+target2.height=62
+target2.name=estructurasDeDatos
+target2.type=PackageTarget
+target2.width=150
+target2.x=10
+target2.y=90

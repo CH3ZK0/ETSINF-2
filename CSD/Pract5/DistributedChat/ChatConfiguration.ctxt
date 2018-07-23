@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ChatConfiguration\ the()
+comment1.params=
+comment1.target=ChatConfiguration()
+comment2.params=args
+comment2.target=ChatConfiguration\ parse(java.lang.String[])
+comment3.params=
+comment3.target=java.lang.String\ getNameServiceHost()
+comment4.params=
+comment4.target=int\ getNameServicePort()
+comment5.params=
+comment5.target=java.lang.String\ getServerName()
+comment6.params=
+comment6.target=int\ getMyPort()
+comment7.params=
+comment7.target=java.lang.String\ getChannelName()
+comment8.params=
+comment8.target=void\ usage()
+comment9.params=args
+comment9.target=void\ parseArguments(java.lang.String[])
+numComments=10

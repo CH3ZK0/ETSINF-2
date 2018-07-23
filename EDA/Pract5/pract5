@@ -1,0 +1,26 @@
+MonticuloBinarioR0
+ insertar:
+    duplica array en:  talla == elArray.length 
+     int  posActual = talla++;  //postincrementat
+     while (posActual > 0 && e.compareTo(elArray[(posActual - 1) / 2]) < 0) {
+   
+     elArray[posActual] = elArray[(posActual - 1) / 2]  //anar al pare
+
+  duplicar:
+       System.arraycopy(elArray, 0, nuevo, 0, talla); // Cambio 6
+
+  eliminarMin:
+    elArray[0] = elArray[--talla];  // predecrementat
+    hundir(0)
+
+
+  hundir:
+      int hijo = posActual * 2 + 1; // fill esq 
+      while (hijo < talla  &&  !esHeap) {  // menor estricte
+      if (hijo != talla - 1// en compte de  if (hijo != talla
+      hijo = posActual * 2 + 1;
+
+
+
+ServidorColaPrioridad
+  temps d'impressió: int PAGINAS_POR_MINUTO = 30; de ServidorDeImpresion importat per la classe

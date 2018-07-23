@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GrupoFigurasTest_8()
+comment0.text=\r\n\ Default\ constructor\ for\ test\ class\ GrupoFigurasTest\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\r\n\ Sets\ up\ the\ test\ fixture.\r\n\r\n\ Called\ before\ every\ test\ case\ method.\r\n
+comment2.params=
+comment2.target=void\ testArea()
+numComments=3

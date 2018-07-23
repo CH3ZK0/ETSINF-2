@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GrupoDeALTest()
+comment0.text=\n\ Default\ constructor\ for\ test\ class\ GrupoDeALTest\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment2.params=
+comment2.target=void\ testVacioTalla()
+comment3.params=
+comment3.target=void\ testAnyadeExiste()
+comment4.params=
+comment4.target=void\ testAnyadeElimina()
+comment5.params=
+comment5.target=void\ tearDown()
+comment5.text=\n\ Tears\ down\ the\ test\ fixture.\n\n\ Called\ after\ every\ test\ case\ method.\n
+numComments=6

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ getText()
+comment1.params=
+comment1.target=IChatUser\ getSender()
+comment2.params=
+comment2.target=java.rmi.Remote\ getDestination()
+comment3.params=
+comment3.target=boolean\ isPrivate()
+numComments=4

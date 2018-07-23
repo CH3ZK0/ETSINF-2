@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ColaAC()
+comment0.text=Constructor\ de\ Cola
+comment1.params=
+comment1.target=void\ ampliarElArray()
+comment1.text=Metodo\ privado\ para\ ampliar\ el\ array\ si\ hace\ falta*
+comment2.params=e
+comment2.target=void\ encolar(java.lang.Object)
+comment2.text=Inserta\ el\ Elemento\ e\ en\ una\ cola\ situandolo\ al\ final\ *
+comment3.params=
+comment3.target=java.lang.Object\ desencolar()
+comment3.text=Consulta\ y\ extrae\ el\ primer\ elemento,\ solo\ si\ la\ cola\ no\ esta\ vacia.*
+comment4.params=
+comment4.target=int\ talla()
+comment4.text=Devuelve\ la\ cantidad\ de\ elementos\ \ de\ la\ cola\ *
+comment5.params=
+comment5.target=java.lang.Object\ primero()
+comment5.text=\ Solo\ si\ la\ cola\ no\ esta\ vacia,\ consulta\ el\ primer\ elemento\ en\ cabeza,\r\n(el\ primero\ en\ orden\ de\ insercion)\ *
+comment6.params=
+comment6.target=boolean\ esVacia()
+comment6.text=Comprueba\ si\ una\ cola\ esta\ vacia\ *
+comment7.params=i
+comment7.target=int\ incrementar(int)
+comment7.text=\ Devuelve\ la\ siguiente\ posicion\ ocupada\ del\ array\ modulo\ MAX.\r\nEsta\ instruccion\ puede\ sustituirse\ por\ (i+1)%elArray.length*
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\ Devuelve\ el\ contenido\ de\ la\ cola\ con\ el\ formato\ \r\n\ \ \ \ <-elem0<-elem1<-elem2<-...<-elemN<-\ donde\ N\ \=\ talla()-1\r\n\ \ \ \ Cada\ elemi\ se\ devuelve\ con\ el\ formato\ que\ este\ definido\ para\ su\ tipo\r\n
+numComments=9

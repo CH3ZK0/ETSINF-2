@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=valor
+comment0.target=NodoABB(java.lang.Object)
+comment0.text=\ Constructor\ de\ un\ nodo\ sin\ hijos\r\n\ @param\ \ valor\ \ Dato\ a\ almacenar\ en\ el\ nodo\r\n
+comment1.params=valor\ izq\ der
+comment1.target=NodoABB(java.lang.Object,\ NodoABB,\ NodoABB)
+comment1.text=\ \ Constructor\ de\ un\ nodo\ con\ un\ hijo\ izquierdo\ y\ derecho\ dado\r\n\ @param\ \ valor\ Dato\ a\ almacenar\ en\ el\ nodo\r\n\ @param\ \ izq\ \ \ Hijo\ izquierdo\ del\ nodo\r\n\ @param\ \ der\ \ \ Hijo\ derecho\ del\ nodo\r\n
+numComments=2

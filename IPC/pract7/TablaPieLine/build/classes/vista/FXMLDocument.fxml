@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="975.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="vista.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER" layoutX="17.0" layoutY="22.0" prefHeight="386.0" prefWidth="975.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="tableView" editable="true" prefHeight="302.0" prefWidth="246.0">
+              <columns>
+                <TableColumn fx:id="diaColumn" prefWidth="75.0" text="Dias" />
+                <TableColumn fx:id="valor1Column" prefWidth="75.0" text="Valor 1" />
+                  <TableColumn fx:id="valor2Column" prefWidth="75.0" text="Valor 2" />
+              </columns>
+            </TableView>
+            <PieChart fx:id="pieChart" prefHeight="330.0" prefWidth="316.0" />
+            <LineChart fx:id="lineChart" prefHeight="330.0" prefWidth="349.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

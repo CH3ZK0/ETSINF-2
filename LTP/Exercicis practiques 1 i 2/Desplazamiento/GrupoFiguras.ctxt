@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=double\ area()
+comment1.params=f
+comment1.target=boolean\ estaFiguraEnGrupo(Figura)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=a
+comment3.target=void\ anyadeFigura(Figura)
+comment4.params=x\ y
+comment4.target=void\ desplazaXY(double,\ double)
+comment5.params=g
+comment5.target=void\ unir(GrupoFiguras)
+numComments=6

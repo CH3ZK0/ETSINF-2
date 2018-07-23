@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ getNick()
+comment1.params=msg
+comment1.target=void\ sendMessage(IChatMessage)
+numComments=2

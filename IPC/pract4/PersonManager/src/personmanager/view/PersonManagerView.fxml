@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personmanager.controller.PersonManagerViewController">
+   <children>
+      <ListView fx:id="listView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" HBox.hgrow="SOMETIMES">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </ListView>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="SOMETIMES">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="buttonAdd" maxWidth="1.7976931348623157E308" onAction="#onAddItem" text="_Add" />
+                  <Button fx:id="buttonRemove" maxWidth="1.7976931348623157E308" onAction="#onRemoveItem" text="_Remove" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane hgap="3.0" vgap="3.0">
+               <columnConstraints>
+                  <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+               </rowConstraints>
+               <children>
+                  <Label text="First Name:" GridPane.halignment="RIGHT" />
+                  <Label text="Last Name:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                  <TextField fx:id="firstNameText" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+                  <TextField fx:id="lastNameText" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

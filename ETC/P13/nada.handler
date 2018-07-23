@@ -1,0 +1,53 @@
+### ESTRUCTURA DE COMPUTADORES (ETS Eng. Inf.)
+##  
+## marzo de 2014
+##
+## PRÁCTICA 13: SINCRONIZACIÓN POR INTERRUPCIONES
+##
+## Código inicial del manejador
+
+
+##############################################################
+##              ÁREA DE DATOS DEL MANEJADOR                 ##
+##############################################################
+
+			.kdata
+var1:	.word 0xFFFFFFFF
+
+#############################################################
+##                  CÓDIGO DEL MANEJADOR                   ##
+#############################################################
+
+          .ktext 0x80000080
+
+    ## Preserva el contexto del programa de usuario
+    ## (nada de momento)
+
+    ## Identifica y trata excepciones
+    ## (nada de momento)
+
+    ## Restaura el contexto
+    ## (nada de momento)
+
+    ## Restaura el modo usuario y vuelve al programa
+    ## (falta algo)
+	rfe
+	jr $k0 
+
+#############################################################
+##                    CÓDIGO DE INICIO                     ##
+#############################################################
+
+          .text
+          .globl __start 
+__start: 
+    ## Código de inicio
+    ## (nada de momento)
+
+    ## Salto al programa de usuario
+	jal main
+
+    ## Código de terminación
+	li $v0, 10
+	syscall	 # Función exit
+

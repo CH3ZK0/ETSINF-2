@@ -1,0 +1,257 @@
+Borrando y restableciendo
+
+Conectado al servidor POP3 de zoltar
++OK Hello there.
+Enviando nombre de usuario
++OK Password required.
+Enviando password
++OK logged in.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+1
+1 409
+2 409
+3 409
+4 409
+5 409
+6 404
+7 399
+.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+2
+Elige numero de correo a leer: 
+1
++OK 409 octets follow.
+Return-Path: <redes07@redes.upv.es>
+X-Original-To: redes07@redes.upv.es
+Delivered-To: redes07@redes.upv.es
+Received: from redes.upv.es (rdc07.redes.upv.es [158.42.180.7])
+	by upv.es (Postfix) with SMTP id B965E2704
+	for <redes07@redes.upv.es>; Wed,  2 Nov 2016 15:43:02 +0100 (CET)
+Subject: Prueba
+From: redes07@redes.upv.es
+To: redes07@redes.upv.es
+
+ Hola,  
+ Esto es Esparta. 
+ Hasta luegor.
+
+.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+3
+Elige numero de correo a borrar
+1
++OK Deleted.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+4
++OK Resurrected.
+Desconectado
+Conectado al servidor POP3 de zoltar
++OK Hello there.
+Enviando nombre de usuario
++OK Password required.
+Enviando password
++OK logged in.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+1
+1 409
+2 409
+3 409
+4 409
+5 409
+6 404
+7 399
+.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+5
++OK Bye-bye.
+Desconectado
+
+
+
+
+
+
+Borrando y saliendo
+
+Conectado al servidor POP3 de zoltar
++OK Hello there.
+Enviando nombre de usuario
++OK Password required.
+Enviando password
++OK logged in.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+1
+1 409
+2 409
+3 409
+4 409
+5 409
+6 404
+7 399
+.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+2
+Elige numero de correo a leer: 
+7
++OK 399 octets follow.
+Return-Path: <redes07@redes.upv.es>
+X-Original-To: redes07@redes.upv.es
+Delivered-To: redes07@redes.upv.es
+Received: from redes07?redes.upv.es (rdc07.redes.upv.es [158.42.180.7])
+	by upv.es (Postfix) with SMTP id E5AED2704
+	for <redes07@redes.upv.es>; Wed,  2 Nov 2016 17:11:36 +0100 (CET)
+Subject: Practica 4 redes
+
+Hola esta es la practica 4 de la asignatura redes
+No se que mas decir
+
+.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+3
+Elige numero de correo a borrar
+1
++OK Deleted.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+5
++OK Bye-bye.
+Desconectado
+Conectado al servidor POP3 de zoltar
++OK Hello there.
+Enviando nombre de usuario
++OK Password required.
+Enviando password
++OK logged in.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+1
+1 409
+2 409
+3 409
+4 409
+5 404
+6 399
+.
+
+-----------------------------
+Ordenes de POP3 implementadas:
+	1: LIST
+	2: RETR
+	3: DELE 
+	4: RSET
+	5: QUIT
+Elige orden (1..5):
+-----------------------------
+
+5
++OK Bye-bye.
+Desconectado
+

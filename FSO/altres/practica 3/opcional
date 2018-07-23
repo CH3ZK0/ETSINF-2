@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in $( ps -fe | awk '/kate/ { print $2 }'); do
+	echo "Pid: " $i
+	echo "Status: " $( cat /proc/$i/status | awk '/^Stat/ { print $2 }' )
+	echo "Memoria: " $( ps u | awk '/\$pid/ {print $4}')
+done 
+

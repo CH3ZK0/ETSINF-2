@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ColaAL()
+comment0.text=Constructor\ de\ Cola
+comment1.params=e
+comment1.target=void\ encolar(java.lang.Object)
+comment1.text=Inserta\ el\ Elemento\ e\ en\ una\ cola\ situandolo\ al\ final\ *
+comment2.params=
+comment2.target=java.lang.Object\ desencolar()
+comment2.text=Consulta\ y\ extrae\ el\ primer\ elemento,\ solo\ si\ la\ cola\ no\ esta\ vacia.*
+comment3.params=
+comment3.target=int\ talla()
+comment3.text=Devuelve\ la\ cantidad\ de\ elementos\ \ de\ la\ cola\ *
+comment4.params=
+comment4.target=java.lang.Object\ primero()
+comment4.text=\ Solo\ si\ la\ cola\ no\ esta\ vacia,\ consulta\ el\ primer\ elemento\ en\ cabeza,\r\n(el\ primero\ en\ orden\ de\ insercion)\ *
+comment5.params=
+comment5.target=boolean\ esVacia()
+comment5.text=Comprueba\ si\ una\ cola\ esta\ vacia\ *
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\ Devuelve\ el\ contenido\ de\ la\ cola\ con\ el\ formato\ \r\n\ \ \ \ <-elem0<-elem1<-elem2<-...<-elemN<-\ donde\ N\ \=\ talla()-1\r\n\ \ \ \ Cada\ elemi\ se\ devuelve\ con\ el\ formato\ que\ este\ definido\ para\ su\ tipo\r\n
+numComments=7

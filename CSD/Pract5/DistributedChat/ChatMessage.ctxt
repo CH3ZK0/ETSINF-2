@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=src\ dst\ str
+comment0.target=ChatMessage(IChatUser,\ IChatChannel,\ java.lang.String)
+comment1.params=src\ dst\ str
+comment1.target=ChatMessage(IChatUser,\ IChatUser,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getText()
+comment3.params=
+comment3.target=IChatUser\ getSender()
+comment4.params=
+comment4.target=java.rmi.Remote\ getDestination()
+comment5.params=
+comment5.target=boolean\ isPrivate()
+numComments=6

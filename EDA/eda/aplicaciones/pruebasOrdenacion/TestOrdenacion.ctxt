@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ comprobar()
+comment0.text=\r\n\ Comprueba\ la\ correccion\ del\ metodo\ mergeSort2\ de\ \r\n\ la\ clase\ Ordenacion,\ basandose\ en\ la\ correccion\r\n\ del\ metodo\ quickSort.\r\n
+comment1.params=
+comment1.target=void\ temporizar()
+comment1.text=\r\n\ Temporizacion\ sobre\ Integer\ de\ los\ metodos\ mergeSort1,\ \ \r\n\ mergeSort2\ y\ quickSort\ de\ la\ clase\ Ordenacion.\r\n
+comment2.params=talla
+comment2.target=java.lang.Integer[]\ crearAleatorioInteger(int)
+comment2.text=\r\n\ Devuelve\ un\ array\ de\ talla\ Integer\ generados\ aleatoriamente.\r\n\ \r\n\ @param\ talla\ \ Talla\ del\ array\ resultado\r\n\ \r\n\ @return\ Integer[]\r\n
+comment3.params=
+comment3.target=void\ temporizarString()
+comment3.text=\r\n\ Temporizacion\ sobre\ String\ de\ los\ metodos\ mergeSort1,\r\n\ mergeSort2\ y\ quickSort\ de\ la\ clase\ Ordenacion.\r\n
+comment4.params=talla\ n
+comment4.target=java.lang.String[]\ crearAleatorioString(int,\ int)
+comment4.text=\r\n\ Devuelve\ un\ array\ de\ talla\ String\ aleatorios\ con\ los\ primeros\ n\ \r\n\ caracteres\ iguales.\r\n\ \r\n\ @param\ talla\ \ Talla\ del\ array\ resultado\r\n\ @param\ n\ \ Numero\ de\ caracteres\ iniciales\ iguales\r\n\ @return\ String[]\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

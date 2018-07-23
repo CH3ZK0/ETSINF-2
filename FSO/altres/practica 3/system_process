@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pids=$( ps -fe | awk '/root/ { print $2 }' )
+
+for i in $pids; do
+	./inf_process $i
+done 

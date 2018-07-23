@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GrupoFiguras()
+comment1.params=
+comment1.target=int\ numFiguras()
+comment2.params=f
+comment2.target=void\ anyadeFigura(Figura)
+comment3.params=
+comment3.target=double\ volumen()
+numComments=4

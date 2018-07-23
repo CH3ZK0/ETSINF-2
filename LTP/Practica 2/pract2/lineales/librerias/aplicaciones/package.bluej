@@ -1,0 +1,24 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=686
+package.editor.height=400
+package.editor.width=578
+package.editor.x=360
+package.editor.y=283
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=467
+target1.editor.y=44
+target1.height=50
+target1.name=AppCola
+target1.naviview.expanded=false
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=70
+target1.y=100

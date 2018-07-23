@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=coorX\ coorY\ m
+comment0.target=Coche(double,\ double,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Veh\u00EDculo\r\n
+comment1.params=
+comment1.target=double\ obtenerCoordenadaX()
+comment2.params=
+comment2.target=double\ obtenerCoordenadaY()
+numComments=3

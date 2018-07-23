@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Figura(double,\ double)
+comment1.params=
+comment1.target=double\ obtenerCoordenadaX()
+comment2.params=
+comment2.target=double\ obtenerCoordenadaY()
+numComments=3

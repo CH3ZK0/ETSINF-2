@@ -1,0 +1,4 @@
+#!/bin/bash
+
+Num_process=$(ls -d /proc/[1-9]*|wc -l)
+echo El número de procesos és: $Num_process

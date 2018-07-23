@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Comparador()
+comment1.params=v1\ v2
+comment1.target=Comparador(Figura,\ Figura)
+comment2.params=
+comment2.target=double\ obtenerCoordenadaX()
+comment3.params=
+comment3.target=double\ obtenerCoordenadaY()
+comment4.params=
+comment4.target=boolean\ compararPosiciones()
+numComments=5

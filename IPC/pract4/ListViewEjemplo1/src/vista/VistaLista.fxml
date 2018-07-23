@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="475.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaListaControlador">
+   <top>
+      <Pane maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textFieldfxID" layoutX="104.0" layoutY="25.0" />
+            <Label layoutX="30.0" layoutY="29.0" text="Nombre" />
+            <Label layoutX="30.0" layoutY="63.0" text="Apellido" />
+            <TextField fx:id="textFieldApellidofxID" layoutX="104.0" layoutY="59.0" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Pane maxWidth="20.0" minWidth="20.0" prefHeight="200.0" prefWidth="20.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane maxWidth="80.0" minWidth="80.0" prefHeight="200.0" prefWidth="80.0" style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BAddfxID" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#addAccion" text="Añadir" />
+            <Button fx:id="BBorrarfxID" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#borrarAccion" text="Borrar" />
+         </children>
+      </Pane>
+   </right>
+   <center>
+      <ListView fx:id="vistadeListafxID" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lavender;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

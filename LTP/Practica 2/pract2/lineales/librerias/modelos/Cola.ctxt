@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ encolar(java.lang.Object)
+comment0.text=\ inserta\ el\ Elemento\ en\ una\ Cola\ situandolo\ al\ final\r\n@param\ e\ elemento\ a\ insertar*
+comment1.params=
+comment1.target=java.lang.Object\ desencolar()
+comment1.text=\ Consulta\ y\ extrae\ el\ primer\ elemento,\ solo\ si\ la\ cola\ no\ esta\ vacia\r\n@return\ el\ elemento\ desencolado*
+comment2.params=
+comment2.target=int\ talla()
+comment2.text=\ Devuelve\ la\ cantidad\ de\ elementos\ de\ la\ cola\r\n@return\ cantidad\ de\ elementos\ de\ la\ cola*
+comment3.params=
+comment3.target=java.lang.Object\ primero()
+comment3.text=\ Solo\ si\ la\ cola\ no\ esta\ vacia,\ consulta\ el\ primer\ elemento\ en\ cabeza,\r\n\ (el\ primero\ en\ orden\ de\ insercion)\ \r\n@return\ el\ primer\ elemento\ de\ la\ cola*
+comment4.params=
+comment4.target=boolean\ esVacia()
+comment4.text=\ Comprueba\ si\ una\ Cola\ esta\ vacia\ \r\n@return\ true\ si\ y\ solo\ si\ la\ cola\ esta\ vacia*
+numComments=5

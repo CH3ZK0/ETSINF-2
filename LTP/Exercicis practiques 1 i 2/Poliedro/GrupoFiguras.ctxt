@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=f
+comment0.target=void\ anyadeFigura(Figura)
+comment1.params=
+comment1.target=double\ area()
+comment2.params=
+comment2.target=double\ volumen()
+numComments=3

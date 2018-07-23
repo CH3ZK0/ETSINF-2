@@ -1,0 +1,31 @@
+f(x) = a*x*x + b*x*log(x) + c*x + d*log(x) + e // Ordre funcions
+
+ 
+
+// CREAR LES FUNCIONS SEGONS ELS COSTOS DE CADA METODO
+
+g(x) = a*x*log(x) + b*x + c*log(x) + d // funcio mergeSort1, quickSort, Sort
+
+h(x) = a*log(x) + b // mergeSort2
+
+
+
+// AJUSTAR LES DADES A LES FUNCIONS
+
+fit g(x) "practica2Integer.txt" u 1:2 via a,b,c,d // ajustar mergeSort1, quickSort, Sort
+
+fit h(x) "practica2Integer.txt" u 1:3 via a,b // ajustar mergeSort2
+
+
+
+// PINTARLOS TOTS
+
+plot "practica2Integer.txt" u 1:2 w l, "practica2Integer.txt" u 1:3 w l, "practica2Integer.txt" u 1:4 w l, "practica2Integer.txt" u 1:5 w l
+
+
+
+
+// HISTOGRAMA
+
+
+plot "dades.txt" using 1:2 w boxes

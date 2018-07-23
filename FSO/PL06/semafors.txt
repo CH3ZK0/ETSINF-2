@@ -1,0 +1,16 @@
+/
+/Incloure les capçaleres de la llibreria de semàfors.
+#include <semaphore.h>
+
+//Declarar una variable global, el “semàfor” que utilitzarán tots els fils
+sem_t sem;
+
+// No està inicializat, només declarat.
+Sección d’entrada sem_wait(&sem);
+Sección de sortida sem_post(&sem);
+
+//En el programa principal “main()” cal inicializar el semàfor.
+sem_init(&sem,0,1); 
+// El segon paràmetre indica que el semàfor no és compartit
+// i l’últim paràmetre indica el valor inicial,
+// “1” en nostre cas (exclusió mútua).

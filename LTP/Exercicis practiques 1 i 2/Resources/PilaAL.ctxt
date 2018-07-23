@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ apilar(java.lang.Object)
+comment1.params=
+comment1.target=java.lang.Object\ desapilar()
+comment2.params=
+comment2.target=java.lang.Object\ cima()
+comment3.params=
+comment3.target=boolean\ esVacia()
+comment4.params=
+comment4.target=int\ talla()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

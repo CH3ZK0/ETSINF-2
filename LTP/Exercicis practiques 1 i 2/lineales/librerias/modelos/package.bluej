@@ -1,0 +1,24 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=657
+package.editor.height=322
+package.editor.width=549
+package.editor.x=13
+package.editor.y=20
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+target1.editor.height=582
+target1.editor.width=790
+target1.editor.x=307
+target1.editor.y=349
+target1.height=50
+target1.name=GrupoDe
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=InterfaceTarget
+target1.typeParameters=<T>
+target1.width=110
+target1.x=170
+target1.y=20

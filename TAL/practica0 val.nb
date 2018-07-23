@@ -1,0 +1,1718 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     61582,       1709]
+NotebookOptionsPosition[     54420,       1494]
+NotebookOutlinePosition[     55249,       1522]
+CellTagsIndexPosition[     55206,       1519]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Breu Introducci\[OAcute] a ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"]
+}], "Title",
+ CellChangeTimes->{{3.552279207416696*^9, 3.5522792193615026`*^9}, {
+  3.552284635504333*^9, 3.5522846427812557`*^9}, {3.556512800888668*^9, 
+  3.5565128045702677`*^9}}],
+
+Cell[TextData[{
+ "L'entorn escollit per a les pr\[AGrave]ctiques \[EAcute]s ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ". Aquest programari permet la manipulaci\[OAcute] senzilla dels conceptes \
+abstractes que s'estudien en classe de teoria. En aquest sentit, l'inter\
+\[EGrave]s principal de les pr\[AGrave]ctiques no consisteix a aconseguir \
+implementacions eficients, sin\[OAcute] a utilitzar un llenguatge que \
+facilite, en el temps limitat de qu\[EGrave] disposem, la construcci\[OAcute] \
+i l'\[UAcute]s d'aquests objectes abstractes. "
+}], "Text",
+ CellChangeTimes->{
+  3.552279234449873*^9, {3.5522792754928102`*^9, 3.552279476096527*^9}, {
+   3.5565128205602674`*^9, 3.5565130333910675`*^9}, {3.556513290448868*^9, 
+   3.556513291930868*^9}, 3.556544571937849*^9, {3.5565446769802394`*^9, 
+   3.5565446798350763`*^9}, {3.55654482543112*^9, 3.556544870484208*^9}}],
+
+Cell[TextData[{
+ "Tenint en compte tots aquets aspectes, a continuaci\[OAcute] s'exposen \
+breument les caracter\[IAcute]stiques de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " imprescindibles per a la realitzaci\[OAcute] de les pr\[AGrave]ctiques. \
+Totes les expressions exemple s\[OAcute]n susceptibles de ser modificades per \
+a que l'estudiant puga comprovar les difer\[EGrave]ncies de comportament de \
+les ordres i estructures presentades.\n\nAquest fitxer ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " permet el desplegament de les diferents seccions fent un click sobre els \
+angles."
+}], "Text",
+ CellChangeTimes->{{3.5565130372286677`*^9, 3.556513178439868*^9}, {
+  3.5565152634041033`*^9, 3.556515268692809*^9}, {3.5565449315585995`*^9, 
+  3.55654493937425*^9}, {3.5565471178862443`*^9, 3.556547125452293*^9}, {
+  3.5575100545778427`*^9, 3.557510054880842*^9}, {3.5874531646508136`*^9, 
+  3.5874532171091557`*^9}, {3.5874533626902885`*^9, 3.587453363501494*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Sintaxi", "Section",
+ CellChangeTimes->{{3.55227956531464*^9, 3.5522795936282263`*^9}, 
+   3.5565131879568677`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Caracter\[IAcute]stiques generals de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"]
+}], "Subsection",
+ CellChangeTimes->{{3.552283059539632*^9, 3.552283104706037*^9}, {
+  3.5565131911080675`*^9, 3.556513195132868*^9}}],
+
+Cell["\<\
+Abans de comen\[CCedilla]ar \[EAcute]s important tenir en compte el seg\
+\[UDoubleDot]ent:\
+\>", "Text",
+ CellChangeTimes->{{3.552279611900628*^9, 3.55227965077884*^9}, {
+  3.556513319808068*^9, 3.556513340072468*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Mathematica diferencia entre maj\[UAcute]scules i min\
+\[UAcute]scules. ",
+ FontWeight->"Bold"]], "Item",
+ CellChangeTimes->{{3.552279704096425*^9, 3.552279748960919*^9}, {
+  3.552281290104279*^9, 3.552281290105905*^9}, {3.552281574693974*^9, 
+  3.5522815777729063`*^9}, {3.552281891443047*^9, 3.552281891445656*^9}, {
+  3.556513345033268*^9, 3.556513354954868*^9}, {3.556515365107371*^9, 
+  3.556515385840967*^9}, {3.556518975505323*^9, 3.5565189760073233`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \[EAcute]s un entorn semi interpretat, a\[CCedilla]\[OGrave] significa que \
+les expressions han d'avaluar-se despr\[EAcute]s de ser \
+introdu\[IDoubleDot]des. ",
+ StyleBox["L'avaluaci\[OAcute] d'una expressi\[OAcute] es realitza amb la \
+combinaci\[OAcute] shift",
+  FontWeight->"Bold"],
+ "+",
+ StyleBox["intro",
+  FontWeight->"Bold"],
+ ". Per exemple:"
+}], "Item",
+ CellChangeTimes->{{3.552281591247517*^9, 3.5522816000011377`*^9}, {
+   3.5565138131476803`*^9, 3.556513956794533*^9}, 3.556545009683901*^9, {
+   3.5565451178081937`*^9, 3.5565451655757*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"numero", "=", "23"}]], "Input",
+ CellChangeTimes->{{3.556515471005968*^9, 3.556515476256304*^9}}],
+
+Cell[BoxData[
+ RowBox[{"lista", "=", 
+  RowBox[{"{", 
+   RowBox[{"0", ",", "1", ",", "2", ",", "3", ",", "4"}], "}"}]}]], "Input",
+ CellChangeTimes->{
+  3.552281601261449*^9, {3.5522816641026077`*^9, 3.552281664495379*^9}, 
+   3.552281844364752*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "despr\[EAcute]s de l'avaluaci\[OAcute] d'aquestes expressions, \
+l'identificador ",
+ StyleBox["numero",
+  FontWeight->"Bold"],
+ " pren el valor 23 i a l'identificador ",
+ StyleBox["llista",
+  FontWeight->"Bold"],
+ " se li assigna la llista {0,1,2,3,4}. "
+}], "ItemParagraph",
+ CellChangeTimes->{{3.552281529627245*^9, 3.552281533173923*^9}, {
+  3.55228163402999*^9, 3.552281766354416*^9}, {3.552281809452847*^9, 
+  3.552281822558177*^9}, {3.552281967729706*^9, 3.552281967732888*^9}, {
+  3.55643058672917*^9, 3.5564305877953863`*^9}, {3.5565139632068315`*^9, 
+  3.556513979463803*^9}, {3.556518330670323*^9, 3.556518372105323*^9}}],
+
+Cell[TextData[{
+ "Les expressions es van numerant de manera autom\[AGrave]tica i es disposen \
+en cel\[CenterDot]les. Cada expressi\[OAcute] t\[EAcute] associada una ",
+ StyleBox["cel\[CenterDot]la d'entrada",
+  FontWeight->"Bold"],
+ " (In[..]) i una altra d'eixida  (Out[..]) que \[EAcute]s resultat de la \
+seua avaluaci\[OAcute]."
+}], "Item",
+ CellChangeTimes->{{3.5522818927155457`*^9, 3.552281939412863*^9}, {
+  3.5565133723020678`*^9, 3.556513471051068*^9}, {3.556545317085871*^9, 
+  3.5565453679733973`*^9}}],
+
+Cell[TextData[{
+ "Una de les estructures de dades m\[EAcute]s importants en ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " (la que nosaltres emprarem m\[EAcute]s) \[EAcute]s la ",
+ StyleBox["llista",
+  FontWeight->"Bold"],
+ ". Una llista \[EAcute]s tota seq\[UDoubleDot]\[EGrave]ncia d'elements \
+separats per comes i encerclats per claus, per exemple:"
+}], "Item",
+ CellChangeTimes->{{3.552282721843452*^9, 3.552282821769878*^9}, {
+  3.5565134776186676`*^9, 3.5565135599554677`*^9}, {3.556513590016668*^9, 
+  3.556513610686668*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"unalistamas", "=", 
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b", ",", "10", ",", 
+    RowBox[{"{", 
+     RowBox[{"7.5", ",", "\"\<b\>\"", ",", "b"}], "}"}], ",", 
+    RowBox[{"{", "a", "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.552282827460533*^9, 3.5522828674327297`*^9}, {
+  3.5522830002858*^9, 3.552283001084062*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Com es pot vore, el",
+ StyleBox["s elements d'una determinada llista no han de ser homogenis",
+  FontWeight->"Bold"],
+ ". El quart i cinqu\[EAcute] elements de la llista anterior s\[OAcute]n tamb\
+\[EAcute] llistes i s'admeten diferents tipus de valors i identificadors."
+}], "ItemParagraph",
+ CellChangeTimes->{{3.552282875980569*^9, 3.552283012489211*^9}, {
+  3.552283168304144*^9, 3.55228316879867*^9}, {3.556513622433468*^9, 
+  3.556513723349868*^9}, {3.556513792257004*^9, 3.5565138090132303`*^9}}],
+
+Cell["\<\
+Com ja s'ha comentat, en la major part dels casos una expressi\[OAcute] \
+d'entrada genera una expressi\[OAcute] d'eixida despr\[EGrave]s d'avaluar-se. \
+Un punt i coma al final d'una expressi\[OAcute] evita que se mostre \
+l'expressi\[OAcute] d'eixida. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.5522840473935833`*^9, 3.5522840975911303`*^9}, {
+   3.55228414080346*^9, 3.5522841988643007`*^9}, {3.552290698288745*^9, 
+   3.552290702146617*^9}, {3.556513995815385*^9, 3.5565140794099803`*^9}, 
+   3.5565458785429964`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lista", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", " ", "2", ",", " ", "4", ",", " ", "6", ",", " ", "8"}],
+     "}"}]}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+l'abs\[EGrave]ncia d'eixida no implica que l'assignaci\[OAcute] no s'haja \
+realitzat.\
+\>", "ItemParagraph",
+ CellChangeTimes->{{3.55229073959447*^9, 3.552290768161281*^9}, {
+  3.5565140846674166`*^9, 3.556514115759611*^9}, {3.556545892832688*^9, 
+  3.5565458936594934`*^9}}],
+
+Cell["\<\
+Una expressi\[OAcute] no t\[EAcute] cap efecte si no ha sigut avaluada. Per \
+exemple, qualsevol \[UAcute]s d'un identificador previ a l'asignaci\[OAcute] \
+d'un valor torna exclusivament el nom de l'identificador. Avalua las \
+expressions seg\[UDoubleDot]ents:\
+\>", "Item",
+ CellChangeTimes->{{3.552281529627245*^9, 3.552281533173923*^9}, {
+   3.55228163402999*^9, 3.552281766354416*^9}, {3.552281809452847*^9, 
+   3.552281822558177*^9}, {3.552281967729706*^9, 3.552282042239152*^9}, {
+   3.556514125400844*^9, 3.55651423697805*^9}, 3.5565473271081734`*^9}]
+}, Open  ]],
+
+Cell[BoxData["otralista"], "Input",
+ CellChangeTimes->{{3.552281775411113*^9, 3.5522818278297853`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"otralista", "=", 
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b", ",", "b", ",", "a"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.552281775411113*^9, 3.552281830666012*^9}}],
+
+Cell[BoxData["otralista"], "Input",
+ CellChangeTimes->{{3.552281775411113*^9, 3.552281830666012*^9}}],
+
+Cell[TextData[{
+ "El resultat de les succesives avaluacions s'emmagatzema en el ",
+ StyleBox["kernel",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " de ",
+ StyleBox["Mathematica.",
+  FontSlant->"Italic"],
+ " Sovint, despr\[EAcute]s de l'avaluaci\[OAcute] d'una expressi\[OAcute] \
+incorrecta, el kernel emmagatzema un valor erroni. L' \"esborrat\" d'aquesta \
+assignaci\[OAcute] es pot realitzar amb l'ordre:"
+}], "Item",
+ CellChangeTimes->{{3.5565142421262817`*^9, 3.5565143635163283`*^9}, {
+  3.5565154133453536`*^9, 3.556515416933561*^9}, {3.55654719909299*^9, 
+  3.5565472205119267`*^9}, {3.589175162070851*^9, 3.5891751651440706`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "otralista", "]"}]], "Input",
+ CellChangeTimes->{{3.552282181994985*^9, 3.552282187445674*^9}, {
+  3.55228225495584*^9, 3.55228225645293*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Si s'ha perdut el rastre de l'error, \[EAcute]s possible \
+'anul\[CenterDot]lar' el Kernel, oblidant tota expressi\[OAcute] avaluada \
+fins el moment. A\[CCedilla]\[OGrave] s'aconsegueix amb l'opci\[OAcute] ",
+ StyleBox["Quit Kernel",
+  FontWeight->"Bold"],
+ " del men\[UAcute] ",
+ StyleBox["Evaluation",
+  FontWeight->"Bold"]
+}], "ItemParagraph",
+ CellChangeTimes->{{3.552282266003798*^9, 3.5522823057719803`*^9}, {
+   3.552282339614517*^9, 3.552282412442878*^9}, {3.556514380754903*^9, 
+   3.55651445463745*^9}, 3.5565459565756965`*^9}],
+
+Cell[TextData[{
+ "En tot moment es pot demanar ajuda interactiva sobre la sintaxi d'una ordre \
+escrivint el signe ",
+ StyleBox["? ",
+  FontWeight->"Bold"],
+ "seguit del nom de l'ordre (o part, utilitzant el comod\[IAcute] ",
+ StyleBox["*",
+  FontWeight->"Bold"],
+ "). Per exemple:"
+}], "Item",
+ CellChangeTimes->{{3.552282420533276*^9, 3.552282476780921*^9}, {
+  3.556514460566526*^9, 3.556514551141287*^9}, {3.556515431395595*^9, 
+  3.5565154409589214`*^9}, {3.5565473759310555`*^9, 3.5565473794664087`*^9}, {
+  3.556548205522229*^9, 3.5565482081585283`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"?", "Appen*"}]], "Input",
+ CellChangeTimes->{{3.5522824855038137`*^9, 3.5522825013888407`*^9}, {
+  3.552282559810739*^9, 3.552282561002256*^9}}],
+
+Cell[BoxData[
+ RowBox[{"?", "AppendTo"}]], "Input",
+ CellChangeTimes->{{3.552282527860031*^9, 3.5522825315159607`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "La primera expressi\[OAcute] torna una llista amb les ordres que comencen \
+per ",
+ StyleBox["Appen",
+  FontWeight->"Bold"],
+ ". La segona torna una ajuda breu sobre la sintaxi de l'ordre ",
+ StyleBox["AppendTo",
+  FontWeight->"Bold"],
+ ". Sempre \[EAcute]s possible obtenir m\[EAcute]s informaci\[OAcute] en \
+l'opci\[OAcute] ",
+ StyleBox["Find Selected Function",
+  FontWeight->"Bold"],
+ " o ",
+ StyleBox["Virtual Book",
+  FontWeight->"Bold"],
+ " del men\[UAcute] ",
+ StyleBox["Help",
+  FontWeight->"Bold"],
+ "."
+}], "ItemParagraph",
+ CellChangeTimes->{{3.552282538944223*^9, 3.5522827007196827`*^9}, {
+  3.556514566242281*^9, 3.5565146416068473`*^9}, {3.5565154508807755`*^9, 
+  3.5565154540320563`*^9}, {3.5565460239837284`*^9, 3.556546025668539*^9}, {
+  3.556547397358198*^9, 3.556547429348397*^9}}],
+
+Cell[TextData[{
+ "De la mateixa manera que en la resta d'entorns de programaci\[OAcute], \
+\[EAcute]s possible incloure comentaris en ",
+ StyleBox["Mathematica ",
+  FontSlant->"Italic"],
+ "encerclant el contingut del comentari entre els s\[IAcute]mbols ",
+ StyleBox["(*",
+  FontWeight->"Bold"],
+ " i ",
+ StyleBox["*)",
+  FontWeight->"Bold"],
+ "."
+}], "Item",
+ CellChangeTimes->{{3.5522837216594257`*^9, 3.552283879841453*^9}, {
+  3.5522840422186413`*^9, 3.552284042221181*^9}, {3.552288518343124*^9, 
+  3.5522885183457937`*^9}, {3.5565146502961583`*^9, 3.5565147198259597`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "a\[CCedilla]\[OGrave]", " ", "\[EAcute]s", " ", "un", " ", "comentari"}], 
+   " ", "*)"}], " ", 
+  RowBox[{
+   RowBox[{
+   "i", " ", "a\[CCedilla]\[OGrave]", " ", "no", " ", "ho", " ", 
+    "\[EAcute]s"}], "..."}]}]], "Input",
+ CellChangeTimes->{{3.5522885231457233`*^9, 3.552288534349249*^9}, {
+  3.5565483694683084`*^9, 3.5565483965063086`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " considera els literals ",
+ StyleBox["True",
+  FontWeight->"Bold"],
+ " i ",
+ StyleBox["False",
+  FontWeight->"Bold"],
+ " com elements del tipus boolean."
+}], "Item",
+ CellChangeTimes->{{3.552291361715464*^9, 3.5522913995485697`*^9}, {
+  3.556514729856824*^9, 3.5565147505737567`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Llistes", "Subsection",
+ CellChangeTimes->{{3.552283138580467*^9, 3.5522831394126062`*^9}, {
+  3.5565131979564676`*^9, 3.5565131998440676`*^9}}],
+
+Cell["\<\
+\[CapitalEAcute]s possible indexar els elements d'una llista de la mateixa \
+manera que s'indexen els elements d'un vector en altres llenguatges de \
+programaci\[OAcute]. \[CapitalEAcute]s important recordar que la sintaxi \
+utilitza dobles claud\[AGrave]tors i que el primer element de la llista t\
+\[EAcute] \[IAcute]ndex 1. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.552283171129691*^9, 3.552283302358795*^9}, {
+  3.556514760167818*^9, 3.556514902192129*^9}}],
+
+Cell[BoxData[
+ RowBox[{"unalistamas", "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5522832334157143`*^9, 3.552283242711076*^9}, {
+  3.5522833047111483`*^9, 3.552283306261054*^9}}],
+
+Cell[BoxData[
+ RowBox[{"unalistamas", "[", 
+  RowBox[{"[", "5", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5522833125024443`*^9, 3.552283320530122*^9}}],
+
+Cell["\<\
+Tamb\[EAcute] \[EAcute]s possible accedir als elements de llistes niades, per \
+exemple, les expresiones seg\[UDoubleDot]ents s\[OAcute]n equivalents:\
+\>", "ItemParagraph",
+ CellChangeTimes->{{3.5522833267376537`*^9, 3.552283398670064*^9}, {
+  3.5565149064977565`*^9, 3.5565149734689856`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"unalistamas", "[", 
+   RowBox[{"[", "4", "]"}], "]"}], "[", 
+  RowBox[{"[", "2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.552283400917204*^9, 3.552283427953968*^9}}],
+
+Cell[BoxData[
+ RowBox[{"unalistamas", "[", 
+  RowBox[{"[", 
+   RowBox[{"4", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.552283430925459*^9, 3.5522834368320303`*^9}, 
+   3.5522841095525084`*^9, 3.5522842042551394`*^9}],
+
+Cell[TextData[{
+ "en ambdos casos s'accedeix al segon element de la llista que ocupa el quart \
+loc en la llista ",
+ StyleBox["unalistamas",
+  FontWeight->"Bold"],
+ "."
+}], "ItemParagraph",
+ CellChangeTimes->{{3.552283439935981*^9, 3.5522834829219503`*^9}, {
+  3.552284274759551*^9, 3.5522842752301188`*^9}, {3.5565149807853928`*^9, 
+  3.5565150130149927`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ordres predefinides", "Subsection",
+ CellChangeTimes->{{3.55228459923236*^9, 3.55228460364183*^9}, {
+  3.556513205834468*^9, 3.5565132103896675`*^9}, {3.556515196849664*^9, 
+  3.5565152023099794`*^9}, {3.5565466211801767`*^9, 3.556546629604231*^9}}],
+
+Cell[TextData[{
+ "\[CapitalEAcute]s important tenir en compte que, a no ser que s'indique el \
+contrari, el resultat d'una ordre no actualitza els par\[AGrave]metres amb \
+els quals s'invoca. ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " disposa de multitud d'ordres \[UAcute]tils per a quasi totes les \
+\[AGrave]rees de la Enginyeria o les Matem\[AGrave]tiques."
+}], "Text",
+ CellChangeTimes->{{3.5522888997289877`*^9, 3.552289012408369*^9}, {
+  3.552289655104747*^9, 3.552289714637656*^9}, {3.5565150287241926`*^9, 
+  3.5565151683780217`*^9}, {3.5565152089091597`*^9, 3.556515215445937*^9}, {
+  3.5565155074020247`*^9, 3.5565155170430717`*^9}, {3.5565466769505343`*^9, 
+  3.5565467080067406`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Ordres sobre llistes", "Subsubsection",
+ CellChangeTimes->{{3.552290370573394*^9, 3.552290377322826*^9}, {
+  3.556515530412615*^9, 3.5565155323158636`*^9}, {3.5565467184564147`*^9, 
+  3.5565467198292236`*^9}, {3.5575100434818425`*^9, 3.5575100441078424`*^9}}],
+
+Cell[TextData[{
+ "Entre les ordres prededinides de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ", hi ha algunes que consideren les llistes com a tals. En aquest conjunt, \
+entre les m\[EAcute]s \[UAcute]tils per a les pr\[AGrave]ctiques de \
+l'assignatura s'inclouen:"
+}], "Text",
+ CellChangeTimes->{{3.5522842836025677`*^9, 3.5522843806548433`*^9}, {
+  3.552285126523332*^9, 3.552285276609582*^9}, {3.552285310529717*^9, 
+  3.552285389278709*^9}, {3.552285426236991*^9, 3.5522854276648893`*^9}, {
+  3.552289627476297*^9, 3.552289650208364*^9}, {3.552289726643017*^9, 
+  3.552289726889234*^9}, {3.556515534577922*^9, 3.5565156281647215`*^9}, {
+  3.556516563999523*^9, 3.556516564701523*^9}, {3.5565467242284517`*^9, 
+  3.5565467571134624`*^9}}],
+
+Cell["Join: Concatena dues llistes, per exemple:", "Item",
+ CellChangeTimes->{{3.552284404471715*^9, 3.5522844075563717`*^9}, {
+  3.552285055964923*^9, 3.552285070409577*^9}, {3.556516569163123*^9, 
+  3.556516580254723*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"l1", "=", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"l2", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "2"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Join", "[", 
+  RowBox[{"l1", ",", "l2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}}],
+
+Cell["\<\
+Append: Afegeix el segon par\[AGrave]metre com un element al final de la \
+llista que s'indica com a primer par\[AGrave]metre. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.552284409746724*^9, 3.552284446084646*^9}, {
+  3.552285436214488*^9, 3.552285505582148*^9}, {3.556516583717923*^9, 
+  3.556516626571123*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Append", "[", 
+  RowBox[{"l1", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}}],
+
+Cell["\<\
+AppendTo: Equivalent a Append per\[OGrave] actualitzant la llista rebuda com \
+a primer par\[AGrave]metre\
+\>", "Item",
+ CellChangeTimes->{{3.552284409746724*^9, 3.552284446084646*^9}, {
+  3.552285436214488*^9, 3.552285493849186*^9}, {3.5522886282088614`*^9, 
+  3.552288667672731*^9}, {3.556516687769923*^9, 3.556516709859523*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"AppendTo", "[", 
+  RowBox[{"l1", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "2"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "*", "\[IndentingNewLine]", " ", "\[EAcute]s", " ", "totalmente", " ", 
+     "equivalent", " ", "a", " ", "\[IndentingNewLine]", " ", "l1"}], "=", 
+    RowBox[{"Append", "[", 
+     RowBox[{"l1", ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1", ",", "2"}], "}"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "**)"}]}]}], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.5522895513563747`*^9, 
+  3.552289599259288*^9}, {3.5565483503063087`*^9, 3.556548356522309*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Prepend/PrependTo: Equivalent a Append/AppendTo per\[OGrave] afegint \
+l'element al principi de la llista en lloc d'al final\
+\>", "Item",
+ CellChangeTimes->{{3.552284409746724*^9, 3.552284446084646*^9}, {
+  3.552285436214488*^9, 3.552285493849186*^9}, {3.5522886282088614`*^9, 
+  3.55228863245961*^9}, {3.552288670867709*^9, 3.5522886992398977`*^9}, {
+  3.556516714586323*^9, 3.5565167604409227`*^9}}],
+
+Cell["First: Torna el primer element de la llista", "Item",
+ CellChangeTimes->{{3.5522844299743137`*^9, 3.552284431699767*^9}, {
+  3.552288702074705*^9, 3.552288712100232*^9}, {3.556516765059523*^9, 
+  3.5565167712215233`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"First", "[", 
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.55228885865483*^9, 3.5522888622110853`*^9}}],
+
+Cell["\<\
+Rest: Torna la llista resultant d'eliminar de la rebuda el primer element\
+\>", "Item",
+ CellChangeTimes->{{3.552284432157592*^9, 3.552284432944949*^9}, {
+  3.5522845572573566`*^9, 3.552284559136248*^9}, {3.552288730414172*^9, 
+  3.5522887564351*^9}, {3.556516773748723*^9, 3.556516794184723*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Rest", "[", 
+  RowBox[{"{", 
+   RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.5522888443919353`*^9, 3.552288854898239*^9}}],
+
+Cell["\<\
+Take: Torna els primers elements de la llista, tants com indica el segon par\
+\[AGrave]metre\
+\>", "Item",
+ CellChangeTimes->{{3.5522844299743137`*^9, 3.552284431699767*^9}, {
+  3.552288702074705*^9, 3.552288712100232*^9}, {3.552291122136047*^9, 
+  3.552291183164555*^9}, {3.5565167961815233`*^9, 3.556516802015923*^9}, {
+  3.556516885019923*^9, 3.556516914113923*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Take", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c", ",", "d", ",", "e"}], "}"}], ",", "3"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.55228885865483*^9, 3.5522888622110853`*^9}, {
+  3.55229113929161*^9, 3.552291139798028*^9}, {3.55229118746497*^9, 
+  3.552291189578588*^9}}],
+
+Cell[TextData[{
+ "L'ordre Take t\[EAcute] diferents funcions que var\[IAcute]en depenent del \
+segon par\[AGrave]metre. Un resum de totes ellas s'obt\[EAcute] avaluant \
+l'ajuda que ofereix ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "."
+}], "ItemParagraph",
+ CellChangeTimes->{{3.552291203898514*^9, 3.552291290211452*^9}, {
+  3.556516919199523*^9, 3.5565169331927233`*^9}, {3.556517564649523*^9, 
+  3.556517606176723*^9}, {3.556546894383833*^9, 3.556546906149914*^9}}],
+
+Cell[BoxData[
+ RowBox[{"?", "Take"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.55228885865483*^9, 3.5522888622110853`*^9}, {
+  3.55229113929161*^9, 3.552291139798028*^9}, {3.55229118746497*^9, 
+  3.552291189578588*^9}, {3.5522913026785917`*^9, 3.552291305937744*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ordres sobre conjunts", "Subsubsection",
+ CellChangeTimes->{{3.5522903955813723`*^9, 3.552290403254087*^9}, {
+  3.5565469282244644`*^9, 3.5565469341213026`*^9}}],
+
+Cell[TextData[{
+ "Un altre conjunt d'ordres de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " tracten les llistes com a conjunts d'elements. Entre aquests destaquem:"
+}], "Text",
+ CellChangeTimes->{{3.55228452862665*^9, 3.552284530036354*^9}, {
+  3.552289752237053*^9, 3.5522897782462378`*^9}, {3.556517663961123*^9, 
+  3.5565177036663227`*^9}, {3.5565469391913347`*^9, 3.556546942872958*^9}}],
+
+Cell["\<\
+Union: Crea una llista amb els elements que apareixen en les llistes que se \
+reben com a par\[AGrave]metre. La llista d'eixida no cont\[EAcute] elements \
+repetits i est\[AGrave] ordenada. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.55228453788492*^9, 3.552284539475648*^9}, {
+  3.552289788910428*^9, 3.552289842709465*^9}, {3.552289894695675*^9, 
+  3.5522899254645777`*^9}, {3.556517707570323*^9, 3.556517764664323*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Union", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "d", ",", "e"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "f", ",", "d", ",", "e"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "f"}], "}"}], ",", 
+   RowBox[{"{", "c", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.5522888443919353`*^9, 3.552288875259602*^9}, {
+  3.552289935874442*^9, 3.5522899621642017`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Union", " ", "pot", " ", "rebre", " ", "una", " ", "\[UAcute]nica", " ", 
+     "llista"}], "..."}], " ", "*)"}], 
+  RowBox[{"Union", "[", 
+   RowBox[{"{", 
+    RowBox[{
+    "b", ",", "a", ",", "c", ",", "a", ",", "a", ",", "b", ",", "b", ",", 
+     "c"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.552289965984918*^9, 3.5522900067353888`*^9}, {
+  3.556548313615309*^9, 3.556548336295309*^9}}],
+
+Cell["\<\
+Intersection: Crea una llista amb els elements que apareixen en totes les \
+llistes que se reben com a par\[AGrave]metre. La  llista d'eixida no cont\
+\[EAcute] elements repetits i est\[AGrave] ordenada. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.552284541923819*^9, 3.552284544345286*^9}, {
+  3.552290021868862*^9, 3.552290031552662*^9}, {3.556517791928323*^9, 
+  3.556517819504323*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Intersection", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "d", ",", "e"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "f", ",", "d", ",", "e"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.5522888443919353`*^9, 3.552288875259602*^9}, {
+  3.552289935874442*^9, 3.5522899621642017`*^9}, {3.552290042547791*^9, 
+  3.552290050972063*^9}}],
+
+Cell["\<\
+Complement: Crea una llista amb els elements que apareixen en la llista \
+indicada com a primer par\[AGrave]metre i que no apareixen en cap de les \
+restants llistes. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.552284544747698*^9, 3.552284564703002*^9}, {
+  3.552290063764332*^9, 3.5522901202584143`*^9}, {3.556517834918323*^9, 
+  3.5565178875593233`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "d", ",", "e"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "f", ",", "d", ",", "e"}], "}"}], ",", 
+   RowBox[{"{", "c", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.5522888443919353`*^9, 3.552288875259602*^9}, {
+  3.552289935874442*^9, 3.5522899621642017`*^9}, {3.552290136237015*^9, 
+  3.552290152020136*^9}}],
+
+Cell[TextData[{
+ "MemberQ: Torna ",
+ StyleBox["True",
+  FontWeight->"Bold"],
+ " si el segon par\[AGrave]metre \[EAcute]s un element del primer."
+}], "Item",
+ CellChangeTimes->{{3.552284565413891*^9, 3.552284566910013*^9}, {
+  3.552290161456386*^9, 3.552290198975091*^9}, {3.556517890911323*^9, 
+  3.556517909088323*^9}}],
+
+Cell[BoxData[
+ RowBox[{"MemberQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", 
+     RowBox[{"{", "a", "}"}], ",", "b", ",", "d", ",", "e"}], "}"}], ",", 
+   RowBox[{"{", "a", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.5522888443919353`*^9, 3.552288875259602*^9}, {
+  3.552289935874442*^9, 3.5522899621642017`*^9}, {3.552290136237015*^9, 
+  3.552290152020136*^9}, {3.552290211703631*^9, 3.552290229555583*^9}}],
+
+Cell[BoxData[
+ RowBox[{"MemberQ", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "b"}], "}"}], ",", "d", ",", 
+     RowBox[{"{", 
+      RowBox[{"e", ",", "a", ",", "f"}], "}"}], ",", "d", ",", "e"}], "}"}], 
+   ",", "a"}], "]"}]], "Input",
+ CellChangeTimes->{{3.552285087025103*^9, 3.552285111448084*^9}, {
+  3.552288595333807*^9, 3.552288621718131*^9}, {3.552288721519318*^9, 
+  3.552288725544963*^9}, {3.5522888443919353`*^9, 3.552288875259602*^9}, {
+  3.552289935874442*^9, 3.5522899621642017`*^9}, {3.552290136237015*^9, 
+  3.552290152020136*^9}, {3.552290216089932*^9, 3.5522902582756*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Miscelanea", "Subsubsection",
+ CellChangeTimes->{{3.552283705650605*^9, 3.5522837077656593`*^9}}],
+
+Cell["\<\
+Sovint \[EAcute]s \[UAcute]til imprimir missatges amb el valor de determinats \
+identificadors. L'ordre Print permet construir aquests missatges. Per exemple:\
+\>", "Item",
+ CellChangeTimes->{{3.55228388301849*^9, 3.5522839903187647`*^9}, {
+  3.556517938439323*^9, 3.556517989168323*^9}, {3.5565476632284317`*^9, 
+  3.5565476673468585`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"unalista", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "3", ",", "5", ",", "7", ",", "9"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<el valor de unalistamas es: \>\"", ",", "unalista"}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.552283995498708*^9, 3.552284030567172*^9}, 
+   3.5522850050944777`*^9, {3.552290581312039*^9, 3.552290598208963*^9}}],
+
+Cell[TextData[{
+ "Cases[lista,patr\[OAcute]n]: Torna una llista amb els elements del primer \
+par\[AGrave]metre que concorden amb patr\[OAcute] indicat en el segon \
+element. El patr\[OAcute] permet fixar la longitud o estructura dels elements \
+que interessa seleccionar i pot contenir el s\[IAcute]mbol \"",
+ StyleBox["_",
+  FontWeight->"Bold"],
+ "\", que fa la funci\[OAcute] de comod\[IAcute]."
+}], "Item",
+ CellChangeTimes->{{3.552290784732951*^9, 3.5522909107904387`*^9}, {
+  3.5565179937243233`*^9, 3.5565180653093233`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"lista", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "a", ",", "b"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"b", ",", "b", ",", "a"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"b", ",", "b"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", "b"}], "}"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "elements", " ", "de", " ", "lista", " ", "que", " ", "s\[OAcute]n", " ", 
+     "llistes", " ", "de", " ", "longitud", " ", "tres"}], "..."}], " ", 
+   "*)"}], 
+  RowBox[{"Cases", "[", 
+   RowBox[{"lista", ",", 
+    RowBox[{"{", 
+     RowBox[{"_", ",", "_", ",", "_"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "elements", " ", "que", " ", "s\[OAcute]n", " ", "llistes", " ", "de", 
+     " ", "longitud", " ", "dos", " ", "que", " ", "comencen", " ", "per", 
+     " ", "a"}], "..."}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Cases", "[", 
+  RowBox[{"lista", ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "_"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{
+  3.5522904273366327`*^9, {3.5522909151113977`*^9, 3.552291055602886*^9}, {
+   3.556548432608309*^9, 3.5565484751383085`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Programaci\[OAcute]", "Section",
+ CellChangeTimes->{{3.552283561585247*^9, 3.552283575160488*^9}, 
+   3.556513212823268*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Operadors l\[OAcute]gics i relacionals", \
+"Subsection"]], "Subsection",
+ CellChangeTimes->{{3.5522836444638567`*^9, 3.5522836526743402`*^9}, 
+   3.5564305079714527`*^9, {3.556430681150642*^9, 3.556430682138554*^9}, 
+   3.556430712850751*^9, {3.5564310848121653`*^9, 3.556431085722793*^9}, {
+   3.556513214211668*^9, 3.556513219016468*^9}}],
+
+Cell[TextData[{
+ "Com en tot entorn de programaci\[OAcute], ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " disposa d'operadors l\[OGrave]gics i de comparaci\[OAcute]. Encara que la \
+seua sintaxi \[EAcute]s molt similar a la d'altres llenguatges, \[EAcute]s \
+important tenir present les difer\[EGrave]ncies."
+}], "Text",
+ CellChangeTimes->{{3.556430710578844*^9, 3.5564308001291447`*^9}, {
+  3.556518563532323*^9, 3.556518627999323*^9}, {3.5565186738763227`*^9, 
+  3.556518688892323*^9}}],
+
+Cell["Negaci\[OAcute]: !", "Item",
+ CellChangeTimes->{{3.5564308187481823`*^9, 3.55643083951687*^9}, 
+   3.556518693688323*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"valor", "=", "True"}], ";"}]], "Input",
+ CellChangeTimes->{{3.556430909609342*^9, 3.556430951516489*^9}}],
+
+Cell[BoxData[
+ RowBox[{"!", "valor"}]], "Input",
+ CellChangeTimes->{{3.556430909609342*^9, 3.556430951516489*^9}}],
+
+Cell["Conjunci\[OAcute]: &&", "Item",
+ CellChangeTimes->{{3.5564308413490143`*^9, 3.556430846976905*^9}, 
+   3.5565186962843227`*^9}],
+
+Cell[BoxData[
+ RowBox[{"valor", " ", "&&", " ", "False"}]], "Input",
+ CellChangeTimes->{{3.556430966716214*^9, 3.5564309746186857`*^9}}],
+
+Cell["Disjunci\[OAcute]: ||", "Item",
+ CellChangeTimes->{{3.556430847828618*^9, 3.5564308532285967`*^9}, 
+   3.556518699945323*^9, {3.5565477226960135`*^9, 3.5565477231328163`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"valor", " ", "||", " ", "False"}]], "Input",
+ CellChangeTimes->{{3.556430979416234*^9, 3.55643098523939*^9}}],
+
+Cell["Igualtat: ==", "Item",
+ CellChangeTimes->{{3.556430855242441*^9, 3.5564308601230288`*^9}, {
+  3.556518703670323*^9, 3.556518704773323*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"valor", " ", "=", " ", "5"}], ";"}]], "Input",
+ CellChangeTimes->{{3.556430997323476*^9, 3.556431003598919*^9}}],
+
+Cell[BoxData[
+ RowBox[{"valor", " ", "==", " ", "5"}]], "Input",
+ CellChangeTimes->{{3.556431006769314*^9, 3.556431027044221*^9}}],
+
+Cell["Desigualtat: =!=", "Item",
+ CellChangeTimes->{{3.556430860948977*^9, 3.556430866641103*^9}, {
+  3.556518708264323*^9, 3.556518710689323*^9}}],
+
+Cell[BoxData[
+ RowBox[{"valor", " ", "=!=", " ", "7"}]], "Input",
+ CellChangeTimes->{{3.556431018417294*^9, 3.556431030442021*^9}}],
+
+Cell[" < , > , >= , <=", "Item",
+ CellChangeTimes->{{3.5564308701149263`*^9, 3.556430904652961*^9}}],
+
+Cell[BoxData[
+ RowBox[{"valor", " ", "<", " ", "10"}]], "Input",
+ CellChangeTimes->{{3.5564310332535257`*^9, 3.5564310366396437`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Estructures de Control", "Subsection",
+ CellChangeTimes->{{3.55228358147244*^9, 3.552283585601412*^9}, {
+  3.5565132213096676`*^9, 3.5565132220272675`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " permet l'avaluaci\[OAcute] i execuci\[OAcute] d'estructures de control de \
+forma individual, a\[CCedilla]\[OGrave] \[EAcute]s, sense necesitat \
+d'incorporar-les a una determinada funci\[OAcute]. Utilitzant de forma \
+convenient aquesta caracter\[IAcute]stica, \[EAcute]s f\[AGrave]cil \
+desenvolupar i comprovar las diferents parts d'un programa i, posteriorment, \
+fusionar-les totes per a construir una funci\[OAcute]."
+}], "Text",
+ CellChangeTimes->{{3.556518722053323*^9, 3.5565188696923227`*^9}}],
+
+Cell["\<\
+Al igual que amb els operadors l\[OGrave]gics, \[EAcute]s important tenir \
+present la sintaxi de les estructures de control per a evitar errors.\
+\>", "Text",
+ CellChangeTimes->{{3.556431053176716*^9, 3.556431055763055*^9}, {
+  3.55643112769836*^9, 3.556431168331245*^9}, {3.556518873287323*^9, 
+  3.556518905270323*^9}}],
+
+Cell[" Aspectes generals a tenir en compte:", "Text",
+ CellChangeTimes->{{3.556518907781323*^9, 3.556518916532323*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Com en tot m\[OGrave]dul predefinit en ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ", no importa de quina estructura de control estem parlant, ",
+ StyleBox["la primera lletra de la paraula reservada \[EAcute]s \
+maj\[UAcute]scula",
+  FontWeight->"Bold"]
+}], "Item",
+ CellChangeTimes->{{3.556518919337323*^9, 3.5565189620673227`*^9}}],
+
+Cell[TextData[{
+ "Tota instrucci\[OAcute] relacionada amb l'ordre est\[AGrave] encelclada \
+entre ",
+ StyleBox["claud\[AGrave]tors",
+  FontWeight->"Bold"]
+}], "Item",
+ CellChangeTimes->{{3.5565189855733232`*^9, 3.556519020497323*^9}, {
+  3.5565477899656515`*^9, 3.556547792539668*^9}}],
+
+Cell[TextData[{
+ "Si hi ha m\[EAcute]s d'una instrucci\[OAcute] a executar, aquestes se \
+separen per ",
+ StyleBox["punt i coma",
+  FontWeight->"Bold"]
+}], "Item",
+ CellChangeTimes->{{3.5565190742313232`*^9, 3.556519099108323*^9}}],
+
+Cell[TextData[{
+ "Com en tota instrucci\[OAcute] en ",
+ StyleBox["Mathematica,",
+  FontSlant->"Italic"],
+ " hi ha que separar la \[OpenCurlyDoubleQuote]instrucci\[OAcute] de control\
+\[CloseCurlyDoubleQuote] de la instrucci\[OAcute] seg\[UDoubleDot]ent amb ",
+ StyleBox["punt i coma",
+  FontWeight->"Bold"]
+}], "Item",
+ CellChangeTimes->{{3.556519102119323*^9, 3.556519131679323*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Selecci\[OAcute] condicional", "Subsubsection",
+ CellChangeTimes->{{3.556431190786886*^9, 3.5564311951514378`*^9}, {
+   3.5564312410633097`*^9, 3.5564312430209312`*^9}, 3.556519134818323*^9}],
+
+Cell["\<\
+L'estructura de selecci\[OAcute] segueix el mateix esquema de tot llenguatge, \
+encara que \[EAcute]s importante tenir present:\
+\>", "Text",
+ CellChangeTimes->{{3.5564312778732967`*^9, 3.55643131667542*^9}, {
+  3.5565191490663233`*^9, 3.556519184077323*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Els tres blocs de la selecci\[OAcute]",
+  FontWeight->"Bold"],
+ " (condici\[OAcute], conjunt d'instruccions a executar si la \
+condici\[OAcute] \[EAcute]s certa i conjunt d'instruccions a executar si la \
+condici\[OAcute] \[EAcute]s falsa) ",
+ StyleBox["estan separats per comes",
+  FontWeight->"Bold"]
+}], "Item",
+ CellChangeTimes->{{3.556431377920083*^9, 3.556431463210498*^9}, {
+  3.5564314988922777`*^9, 3.556431520402521*^9}, {3.556519186947323*^9, 
+  3.556519237977055*^9}, {3.5891751907438345`*^9, 3.5891751913210382`*^9}}],
+
+Cell["\<\
+El conjunt d'instruccions a executar si la condici\[OAcute] \[EAcute]s falsa \
+\[EAcute]s opcional\
+\>", "Item",
+ CellChangeTimes->{{3.556431504381515*^9, 3.5564315286256847`*^9}, {
+  3.556431651262126*^9, 3.5564316512660313`*^9}, {3.5565192409242334`*^9, 
+  3.556519265332993*^9}}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"clave", "=", "23"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"clave", " ", ">", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Print", "[", "\"\<menor\>\"", "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"clave", "=", "0"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"clave", " ", "=", " ", 
+       RowBox[{"clave", " ", "*", " ", "100"}]}], ";"}]}], 
+    "\[IndentingNewLine]", "]"}], ";"}], 
+  RowBox[{"(*", " ", "if", " ", "*)"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.5564311974346743`*^9, {3.556431246116292*^9, 3.556431268277771*^9}, {
+   3.556431536525125*^9, 3.556431586205378*^9}, {3.556431728125194*^9, 
+   3.556431773327381*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"clave", "=", "23"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"clave", " ", ">", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"clave", "=", "0"}]}], "\[IndentingNewLine]", "]"}], ";"}], 
+  RowBox[{"(*", " ", "if", " ", "*)"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.5564311974346743`*^9, {3.556431246116292*^9, 3.556431268277771*^9}, {
+   3.556431536525125*^9, 3.556431586205378*^9}, {3.556431728125194*^9, 
+   3.5564317898598223`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Iteraci\[OAcute]", "Subsubsection",
+ CellChangeTimes->{{3.556431190786886*^9, 3.556431211508803*^9}, 
+   3.556519296407418*^9}],
+
+Cell["\<\
+Ens centrarem en l'\[UAcute]s de dos tipus de bucle: \
+\>", "Text",
+ CellChangeTimes->{{3.5565192993325872`*^9, 3.556519317059675*^9}}],
+
+Cell["Bucle While", "Text",
+ FontWeight->"Bold"],
+
+Cell[TextData[{
+ " \[CapitalEAcute]s important tenir present que e",
+ StyleBox["ls dos blocs de la iteraci\[OAcute]",
+  FontWeight->"Bold"],
+ " (condici\[OAcute] i conjunt d'instruccions a executar) ",
+ StyleBox["est\[AGrave]n separats per comes",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.5565193321337023`*^9, 3.5565193696957216`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"clave", "=", "False"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"i", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"While", "[", 
+    RowBox[{
+     RowBox[{"!", "clave"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"i", "++"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"i", ">", "10"}], ",", 
+        RowBox[{"clave", "=", "True"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Print", "[", "i", "]"}], ";"}]}], "\[IndentingNewLine]", "]"}],
+    ";"}], 
+  RowBox[{"(*", " ", "while", " ", "*)"}]}], "\[IndentingNewLine]"}], "Input"],
+
+Cell["Bucle For", "Text",
+ FontWeight->"Bold"],
+
+Cell[TextData[{
+ "De la mateixa manera que en el bucle While, ",
+ StyleBox["els quatre blocs de la iteraci\[OAcute]",
+  FontWeight->"Bold"],
+ " (increment, condici\[OAcute], pas i conjunt d'instruccions a executar) ",
+ StyleBox["est\[AGrave]n separats per comes",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.5565193763303742`*^9, 3.5565194120256467`*^9}, {
+  3.5565479632222986`*^9, 3.55654798060003*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"For", "[", 
+    RowBox[{
+     RowBox[{"i", "=", "0"}], ",", 
+     RowBox[{"i", "\[LessEqual]", "10"}], ",", 
+     RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Print", "[", 
+       RowBox[{"\"\<valor de i:\>\"", ",", "i"}], "]"}], ";"}]}], 
+    "\[IndentingNewLine]", "]"}], ";"}], 
+  RowBox[{"(*", " ", "for", " ", "*)"}]}]], "Input"]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["M\[OGrave]duls", "Subsection",
+ CellChangeTimes->{{3.552283592013674*^9, 3.552283607639298*^9}, {
+  3.556513224398468*^9, 3.556513227144068*^9}}],
+
+Cell[TextData[{
+ "Mathematica du incorporat un llenguatge de programaci\[OAcute] propi que \
+permet incorporar funcions per a realitzar tasques espec\[IAcute]fiques al \
+mateix nivell que les funcions predefinides.  Per a resoldre els exercicis de \
+les pr\[AGrave]ctiques ens centrarem en el diseny de ",
+ StyleBox["m\[OGrave]duls",
+  FontWeight->"Bold"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.55651941938659*^9, 3.5565195067505217`*^9}}],
+
+Cell[TextData[{
+ "L'objectiu de les pr\[AGrave]ctiques \[EAcute]s implementar algorismes \
+relacionats amb la Teoria de Llenguatges i la seua aplicaci\[OAcute] al \
+problema del ",
+ StyleBox["string matching",
+  FontSlant->"Italic"],
+ ", deixant de costat altres aspectes, per la qual cosa ",
+ StyleBox["assumirem que les cridades als m\[OGrave]duls s\[OAcute]n \
+correctes",
+  FontWeight->"Bold"],
+ ", amb el nombre apropiat de par\[AGrave]metres i del tipus correcte."
+}], "Text",
+ CellChangeTimes->{{3.556519509496619*^9, 3.5565196334027433`*^9}, {
+  3.5565480489106617`*^9, 3.5565480593310614`*^9}}],
+
+Cell["\<\
+El concept de m\[OGrave]dul \[EAcute]s totalment semblant al de procediment \
+en altres llenguatges de programaci\[OAcute]. L'esquema gen\[EGrave]ric \
+\[EAcute]s:\
+\>", "Text",
+ CellChangeTimes->{{3.5565196397400103`*^9, 3.556519677527566*^9}, 
+   3.5565480708590174`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NombreDelModulo", "[", "ListadeParametros", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "listadevariableslocales", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+       "instrucci\[OAcute]", ";", "\[IndentingNewLine]", "instrucci\[OAcute]",
+         ";"}], "\[IndentingNewLine]", "..."}], "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", "valoreixida", "]"}]}], ";"}]}], 
+   "\[IndentingNewLine]", "]"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "fi", " ", "de", " ", "la", " ", "definici\[OAcute]", " ", "del", " ", 
+    "m\[OGrave]dul"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.5564321317527018`*^9, 3.556432216748378*^9}, {
+  3.556432541797337*^9, 3.556432553216014*^9}, {3.556548506321309*^9, 
+  3.5565485455233088`*^9}}],
+
+Cell["\<\
+Per a evitar errors dif\[IAcute]cils de depurar \[EAcute]s important tenir \
+present:\
+\>", "Text",
+ CellChangeTimes->{{3.5564312778732967`*^9, 3.55643131667542*^9}, {
+  3.5564318112518673`*^9, 3.556431893082465*^9}, {3.5564323862852697`*^9, 
+  3.556432397039398*^9}, {3.5565196811642933`*^9, 3.5565196984537506`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Les versions actuales de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " sagnen el codi i l'acoloreixen en funci\[OAcute] de la sintaxi. Un sagnat \
+o color no esperat, pot indicar la pres\[EGrave]ncia d'un error. "
+}], "Item",
+ CellChangeTimes->{{3.556431323019968*^9, 3.556431347154615*^9}, {
+  3.5564319052665777`*^9, 3.5564319148398247`*^9}, {3.5564324020010777`*^9, 
+  3.556432488740494*^9}, {3.5565197052301054`*^9, 3.5565197543659306`*^9}, {
+  3.5565197900800724`*^9, 3.556519803497755*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " no permet la modificaci\[OAcute] dels par\[AGrave]metres"
+}], "Item",
+ CellChangeTimes->{{3.556431349244019*^9, 3.556431374424849*^9}, {
+  3.5564315963285637`*^9, 3.556431596331321*^9}, {3.556431919869282*^9, 
+  3.5564319237275953`*^9}, {3.5564324990097857`*^9, 3.556432534897833*^9}, {
+  3.556519806612378*^9, 3.5565198232967143`*^9}}],
+
+Cell[TextData[{
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " permet indicar el tipus de cada par\[AGrave]metre. No obstant a\[CCedilla]\
+\[OGrave] \[EAcute]s opcional."
+}], "Item",
+ CellChangeTimes->{{3.556431377920083*^9, 3.556431463210498*^9}, {
+  3.5564314988922777`*^9, 3.556431520402521*^9}, {3.556431936837392*^9, 
+  3.556431950243979*^9}, {3.55643256207795*^9, 3.556432632097774*^9}, {
+  3.5565198276565857`*^9, 3.556519854186102*^9}}],
+
+Cell[TextData[{
+ "El gui\[OAcute] de subratllat t\[EAcute] una sem\[AGrave]ntica associada en \
+",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " i no s'ha d'usar com a part d'un identificador"
+}], "Item",
+ CellChangeTimes->{{3.5564315968797283`*^9, 3.556431639854207*^9}, 
+   3.5564319601216927`*^9, {3.556432643382518*^9, 3.5564327092852592`*^9}, {
+   3.556519857353419*^9, 3.556519902157899*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Potencia", "[", 
+   RowBox[{"base_", ",", "exponente_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"i", ",", "resultado"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"resultado", "=", "1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"i", "=", "1"}], ",", 
+       RowBox[{"i", "\[LessEqual]", "exponente"}], ",", 
+       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"resultado", "=", 
+         RowBox[{"resultado", "*", "base"}]}], ";"}]}], "\[IndentingNewLine]",
+       "]"}], ";", 
+     RowBox[{"(*", " ", "for", " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", "resultado", "]"}], ";"}]}], 
+   "\[IndentingNewLine]", "]"}], 
+  RowBox[{"(*", " ", "Potencia", " ", "*)"}]}]], "Input"],
+
+Cell["\<\
+Una volta definit i avaluat un m\[OGrave]dul, es poden incloure cridades a \
+ell en altres m\[OGrave]duls o b\[EAcute] executar-se de forma \
+a\[IDoubleDot]llada.\
+\>", "ItemParagraph",
+ CellChangeTimes->{{3.556515296197694*^9, 3.556515388966207*^9}, {
+  3.556518104596323*^9, 3.556518167183323*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Potencia", "[", 
+  RowBox[{"3", ",", "1000"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5565153925372458`*^9, 3.5565154019816513`*^9}}]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Exercicis", "Section",
+ CellChangeTimes->{{3.587281103947791*^9, 3.587281105879477*^9}, {
+  3.587453680668127*^9, 3.5874536831797433`*^9}}],
+
+Cell[TextData[{
+ "A partir d'ara, una cadena sobre un alfabet ",
+ StyleBox["A",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ ", es representar\[AAcute] mitjant\[CCedilla]ant una llista de \
+s\[IAcute]mbols de ",
+ StyleBox["A",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ ". Per exemple, la cadena ",
+ StyleBox["ababb ",
+  FontSlant->"Italic"],
+ "es representa amb la llista {a,b,a,b,b}. La cadena buida es representa amb \
+la llista {}."
+}], "Text",
+ CellChangeTimes->{{3.5872819446403503`*^9, 3.587282092060924*^9}, {
+  3.5874536926178036`*^9, 3.5874537569214163`*^9}, {3.5874544743086147`*^9, 
+  3.5874545090198374`*^9}}],
+
+Cell[TextData[{
+ "Es demana escriure un m\[OGrave]dul ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "  que, donats una llista i dos enters ",
+ StyleBox["j",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " i ",
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ ", torne la llista amb els elements de les posicions ",
+ StyleBox["j",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " i ",
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " intercanviades."
+}], "ItemNumbered",
+ CellChangeTimes->{{3.587282722409523*^9, 3.587282769495165*^9}, {
+  3.587453772022313*^9, 3.587453879881404*^9}}],
+
+Cell[TextData[{
+ "Pista: Recordeu que es pot accedir directament a la component ",
+ StyleBox["j",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " de la lista \"llista\" de la forma llista[[j]]."
+}], "Text",
+ CellChangeTimes->{{3.587282822392935*^9, 3.587282855467697*^9}, {
+  3.587453993652933*^9, 3.5874540472860775`*^9}}],
+
+Cell[TextData[{
+ "Es demana escriure un m\[OGrave]dul ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " que donats una llista i  un element,  torne el nombre de vegades que \
+l'element apareix en la llista"
+}], "ItemNumbered",
+ CellChangeTimes->{{3.587281168338705*^9, 3.587281237081118*^9}, {
+   3.587282810524485*^9, 3.587282810693989*^9}, 3.587453796046467*^9, {
+   3.5874540719810357`*^9, 3.5874541070032597`*^9}}],
+
+Cell["\<\
+Algorisme: Inicialitzar un contador a zero. Recorrer la llista comparant cada \
+element amb l'element d'entrada. Augmentar el contador en cas que \
+amb\[OAcute]s coincidisquen.\
+\>", "Text",
+ CellChangeTimes->{{3.587281606767194*^9, 3.587281675346916*^9}, 
+   3.5872819182482033`*^9, {3.587454112478895*^9, 3.587454172102477*^9}}],
+
+Cell[TextData[{
+ "Es demana escriure un m\[OGrave]dul ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " que torne el conjunto de prefixos d'una cadena d'entrada x "
+}], "ItemNumbered",
+ CellChangeTimes->{{3.587281339099203*^9, 3.5872813668169413`*^9}, {
+   3.587283513203683*^9, 3.5872835133160753`*^9}, 3.5874537996812897`*^9, {
+   3.587454187016173*^9, 3.5874542184503746`*^9}}],
+
+Cell[TextData[{
+ "Algorisme: Inicialitzar una llista d'eixida amb la llista buida. Per a ",
+ StyleBox["i",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " igual a zero, fins la longitud de la llista, obtenir el segment de \
+longitud ",
+ StyleBox["i",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " utilitzant la funci\[OAcute] Take. Afegir la llista obtinguda a la llista \
+d'eixida."
+}], "Text",
+ CellChangeTimes->{{3.587281606767194*^9, 3.587281675346916*^9}, {
+   3.587281707489728*^9, 3.587281829710855*^9}, 3.587281916380336*^9, 
+   3.5874541202477446`*^9, {3.587454224206811*^9, 3.587454317760611*^9}, {
+   3.5874545633237853`*^9, 3.587454563947789*^9}}],
+
+Cell[TextData[{
+ "Es demana escriure un m\[OGrave]dul ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " que, tenint com entrada una cadena ",
+ StyleBox["x",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ ", i un enter ",
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ ", torne el conjunt de segments de ",
+ StyleBox["x",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " de longitud ",
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " "
+}], "ItemNumbered",
+ CellChangeTimes->{
+  3.587281372564268*^9, {3.58728148594456*^9, 3.587281550798246*^9}, {
+   3.587283510258602*^9, 3.587283510357462*^9}, 3.5874538030353117`*^9, {
+   3.5874543467767973`*^9, 3.587454366698125*^9}}],
+
+Cell[TextData[{
+ "Pista: La \[UAcute]ltima posici\[OAcute] en la qual pot comen\[CCedilla]ar \
+un segment de longitud ",
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " \[EAcute]s la posici\[OAcute]",
+ StyleBox[" n-k+1",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ ", on ",
+ StyleBox["n",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ " \[EAcute]s la longitud de la cadena."
+}], "Text",
+ CellChangeTimes->{{3.587281606767194*^9, 3.587281675346916*^9}, {
+  3.587281707489728*^9, 3.587281913367154*^9}, {3.587454371159753*^9, 
+  3.5874544064783792`*^9}}],
+
+Cell[TextData[{
+ "Es demana escriure un m\[OGrave]dul ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " que suprimisca els elements repetits d'una llista deixant la primera ocurr\
+\[EGrave]ncia de cadascun."
+}], "ItemNumbered",
+ CellChangeTimes->{
+  3.5883983279468164`*^9, {3.588398404566478*^9, 3.58839840458348*^9}, 
+   3.5883987101780357`*^9}],
+
+Cell["\<\
+Pista: Utilitzar una variable auxiliar on escriure els elements una sola \
+vegada.\
+\>", "Text",
+ CellChangeTimes->{{3.588398415127534*^9, 3.588398468555876*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1904, 1065},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 1.25, 1.25 Inherited],
+FrontEndVersion->"7.0 for Microsoft Windows (64-bit) (November 10, 2008)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> 
+     FrontEnd`FileName[{"Report"}, "StandardReport.nb", CharacterEncoding -> 
+       "UTF-8"]]], 
+   Cell[
+    StyleData["Input"]]}, Visible -> False, FrontEndVersion -> 
+  "7.0 for Microsoft Windows (64-bit) (November 10, 2008)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 278, 7, 101, "Title"],
+Cell[848, 31, 885, 15, 55, "Text"],
+Cell[1736, 48, 993, 18, 97, "Text"],
+Cell[CellGroupData[{
+Cell[2754, 70, 121, 2, 91, "Section"],
+Cell[CellGroupData[{
+Cell[2900, 76, 240, 6, 31, "Subsection"],
+Cell[3143, 84, 228, 5, 34, "Text"],
+Cell[CellGroupData[{
+Cell[3396, 93, 487, 7, 27, "Item"],
+Cell[3886, 102, 626, 16, 28, "Item"]
+}, Open  ]],
+Cell[4527, 121, 121, 2, 47, "Input"],
+Cell[4651, 125, 249, 6, 47, "Input"],
+Cell[CellGroupData[{
+Cell[4925, 135, 649, 14, 24, "ItemParagraph"],
+Cell[5577, 151, 515, 10, 28, "Item"],
+Cell[6095, 163, 541, 12, 28, "Item"]
+}, Open  ]],
+Cell[6651, 178, 348, 8, 47, "Input"],
+Cell[CellGroupData[{
+Cell[7024, 190, 521, 9, 24, "ItemParagraph"],
+Cell[7548, 201, 537, 9, 27, "Item"]
+}, Open  ]],
+Cell[8100, 213, 185, 5, 47, "Input"],
+Cell[CellGroupData[{
+Cell[8310, 222, 286, 6, 23, "ItemParagraph"],
+Cell[8599, 230, 569, 9, 27, "Item"]
+}, Open  ]],
+Cell[9183, 242, 103, 1, 47, "Input"],
+Cell[9289, 245, 190, 4, 47, "Input"],
+Cell[9482, 251, 101, 1, 47, "Input"],
+Cell[9586, 254, 643, 14, 28, "Item"],
+Cell[10232, 270, 179, 3, 47, "Input"],
+Cell[CellGroupData[{
+Cell[10436, 277, 556, 12, 24, "ItemParagraph"],
+Cell[10995, 291, 561, 13, 28, "Item"]
+}, Open  ]],
+Cell[11571, 307, 168, 3, 47, "Input"],
+Cell[11742, 312, 119, 2, 47, "Input"],
+Cell[CellGroupData[{
+Cell[11886, 318, 822, 23, 24, "ItemParagraph"],
+Cell[12711, 343, 578, 15, 28, "Item"]
+}, Open  ]],
+Cell[13304, 361, 409, 11, 47, "Input"],
+Cell[13716, 374, 351, 12, 28, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14104, 391, 150, 2, 31, "Subsection"],
+Cell[14257, 395, 478, 8, 27, "Item"],
+Cell[14738, 405, 206, 4, 47, "Input"],
+Cell[14947, 411, 155, 3, 47, "Input"],
+Cell[15105, 416, 304, 5, 23, "ItemParagraph"],
+Cell[15412, 423, 205, 5, 47, "Input"],
+Cell[15620, 430, 231, 5, 47, "Input"],
+Cell[15854, 437, 361, 9, 24, "ItemParagraph"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16252, 451, 255, 3, 31, "Subsection"],
+Cell[16510, 456, 709, 13, 34, "Text"],
+Cell[CellGroupData[{
+Cell[17244, 473, 265, 3, 27, "Subsubsection"],
+Cell[17512, 478, 753, 14, 34, "Text"],
+Cell[18268, 494, 224, 3, 27, "Item"],
+Cell[18495, 499, 396, 11, 92, "Input"],
+Cell[18894, 512, 327, 6, 27, "Item"],
+Cell[19224, 520, 257, 6, 47, "Input"],
+Cell[19484, 528, 341, 6, 27, "Item"],
+Cell[19828, 536, 759, 18, 136, "Input"],
+Cell[CellGroupData[{
+Cell[20612, 558, 412, 7, 27, "Item"],
+Cell[21027, 567, 227, 3, 27, "Item"]
+}, Open  ]],
+Cell[21269, 573, 349, 7, 47, "Input"],
+Cell[21621, 582, 307, 5, 27, "Item"],
+Cell[21931, 589, 349, 7, 47, "Input"],
+Cell[22283, 598, 379, 7, 27, "Item"],
+Cell[22665, 607, 469, 10, 47, "Input"],
+Cell[23137, 619, 479, 10, 23, "ItemParagraph"],
+Cell[23619, 631, 402, 6, 47, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24058, 642, 167, 2, 27, "Subsubsection"],
+Cell[24228, 646, 401, 8, 34, "Text"],
+Cell[24632, 656, 437, 7, 27, "Item"],
+Cell[25072, 665, 575, 13, 47, "Input"],
+Cell[25650, 680, 474, 13, 47, "Input"],
+Cell[26127, 695, 404, 7, 27, "Item"],
+Cell[26534, 704, 538, 11, 47, "Input"],
+Cell[27075, 717, 371, 7, 27, "Item"],
+Cell[27449, 726, 570, 12, 47, "Input"],
+Cell[28022, 740, 320, 8, 28, "Item"],
+Cell[28345, 750, 570, 11, 47, "Input"],
+Cell[28918, 763, 638, 14, 47, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29593, 782, 103, 1, 27, "Subsubsection"],
+Cell[29699, 785, 351, 6, 27, "Item"],
+Cell[30053, 793, 454, 11, 70, "Input"],
+Cell[30510, 806, 531, 10, 28, "Item"],
+Cell[31044, 818, 1291, 36, 114, "Input"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32396, 861, 130, 2, 91, "Section"],
+Cell[CellGroupData[{
+Cell[32551, 867, 364, 5, 31, "Subsection"],
+Cell[32918, 874, 497, 10, 34, "Text"],
+Cell[33418, 886, 127, 2, 27, "Item"],
+Cell[33548, 890, 140, 3, 47, "Input"],
+Cell[33691, 895, 114, 2, 47, "Input"],
+Cell[33808, 899, 133, 2, 27, "Item"],
+Cell[33944, 903, 136, 2, 47, "Input"],
+Cell[34083, 907, 181, 2, 27, "Item"],
+Cell[34267, 911, 133, 2, 47, "Input"],
+Cell[34403, 915, 145, 2, 27, "Item"],
+Cell[34551, 919, 147, 3, 47, "Input"],
+Cell[34701, 924, 130, 2, 47, "Input"],
+Cell[34834, 928, 147, 2, 27, "Item"],
+Cell[34984, 932, 131, 2, 47, "Input"],
+Cell[35118, 936, 100, 1, 27, "Item"],
+Cell[35221, 939, 134, 2, 47, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[35392, 946, 162, 2, 30, "Subsection"],
+Cell[35557, 950, 571, 10, 55, "Text"],
+Cell[36131, 962, 332, 6, 34, "Text"],
+Cell[36466, 970, 119, 1, 34, "Text"],
+Cell[CellGroupData[{
+Cell[36610, 975, 360, 9, 28, "Item"],
+Cell[36973, 986, 285, 7, 28, "Item"],
+Cell[37261, 995, 231, 6, 28, "Item"],
+Cell[37495, 1003, 384, 9, 28, "Item"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37916, 1017, 197, 2, 27, "Subsubsection"],
+Cell[38116, 1021, 269, 5, 34, "Text"],
+Cell[CellGroupData[{
+Cell[38410, 1030, 557, 11, 28, "Item"],
+Cell[38970, 1043, 292, 6, 27, "Item"]
+}, Open  ]],
+Cell[39277, 1052, 804, 20, 180, "Input"],
+Cell[40084, 1074, 557, 13, 136, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40678, 1092, 133, 2, 27, "Subsubsection"],
+Cell[40814, 1096, 145, 3, 34, "Text"],
+Cell[40962, 1101, 48, 1, 34, "Text"],
+Cell[41013, 1104, 351, 8, 35, "Text"],
+Cell[41367, 1114, 676, 18, 202, "Input"],
+Cell[42046, 1134, 46, 1, 34, "Text"],
+Cell[42095, 1137, 417, 9, 35, "Text"],
+Cell[42515, 1148, 415, 12, 92, "Input"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[42979, 1166, 151, 2, 30, "Subsection"],
+Cell[43133, 1170, 441, 9, 35, "Text"],
+Cell[43577, 1181, 603, 13, 56, "Text"],
+Cell[44183, 1196, 283, 6, 34, "Text"],
+Cell[44469, 1204, 841, 20, 158, "Input"],
+Cell[45313, 1226, 328, 6, 34, "Text"],
+Cell[CellGroupData[{
+Cell[45666, 1236, 523, 10, 27, "Item"],
+Cell[46192, 1248, 404, 8, 27, "Item"],
+Cell[46599, 1258, 449, 9, 27, "Item"],
+Cell[47051, 1269, 404, 9, 27, "Item"]
+}, Open  ]],
+Cell[47470, 1281, 877, 22, 180, "Input"],
+Cell[48350, 1305, 310, 6, 23, "ItemParagraph"],
+Cell[48663, 1313, 157, 3, 47, "Input"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48869, 1322, 145, 2, 91, "Section"],
+Cell[49017, 1326, 648, 18, 35, "Text"],
+Cell[49668, 1346, 660, 23, 28, "ItemNumbered"],
+Cell[50331, 1371, 334, 8, 35, "Text"],
+Cell[50668, 1381, 423, 9, 27, "ItemNumbered"],
+Cell[51094, 1392, 340, 6, 34, "Text"],
+Cell[51437, 1400, 385, 8, 27, "ItemNumbered"],
+Cell[51825, 1410, 683, 16, 35, "Text"],
+Cell[52511, 1428, 746, 25, 28, "ItemNumbered"],
+Cell[53260, 1455, 602, 18, 35, "Text"],
+Cell[53865, 1475, 352, 9, 27, "ItemNumbered"],
+Cell[54220, 1486, 172, 4, 34, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

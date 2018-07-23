@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=inicial
+comment0.target=TablaHash(int)
+comment0.text=\ Crea\ una\ Tabla\ Hash\ vacia,\ con\ una\ capacidad\ (inicial)\ maxima\ \ \n\ \ de\ tallaMaximaEstimada\ entradas\ y\ factor\ de\ carga\ 0.75\n
+comment1.params=n
+comment1.target=int\ siguientePrimo(int)
+comment2.params=n
+comment2.target=boolean\ esPrimo(int)
+comment3.params=c
+comment3.target=int\ indiceHash(java.lang.Object)
+comment4.params=c\ v
+comment4.target=java.lang.Object\ insertar(java.lang.Object,\ java.lang.Object)
+comment4.text=\ Inserta\ la\ entrada\ (c,\ v)\ \ a\ una\ Tabla\ Hash\ y\ devuelve\ \ \n\ \ el\ antiguo\ valor\ aso\n\ \ \ \ \ \ \ \ ciado\ a\ c,\ o\ null\ si\ no\ hay\ ninguna\ \n\ \ entrada\ con\ clave\ c\ en\ la\ Tabla\n
+comment5.params=c
+comment5.target=librerias.estructurasDeDatos.modelos.ListaConPI\ colisionanCon(java.lang.Object)
+numComments=6

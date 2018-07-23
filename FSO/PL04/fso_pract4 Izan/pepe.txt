@@ -1,0 +1,42 @@
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  2454  2445  0  80   0 -  7449 wait   pts/17   00:00:00 bash
+0 T  1000  9811  2454  0  80   0 -  1056 signal pts/17   00:00:00 adopted_process
+1 Z  1000  9812  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+1 Z  1000  9813  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+1 Z  1000  9814  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+1 Z  1000  9819  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+0 S  1000 10122  2454 21  80   0 - 169894 poll_s pts/17  00:05:34 gedit
+0 T  1000 11097  2454  0  80   0 -  1056 signal pts/17   00:00:00 change_memory2
+4 T  1000 11098 11097  0  80   0 -  6223 signal pts/17   00:00:01 ls
+0 T  1000 11169  2454  0  80   0 -  1056 signal pts/17   00:00:00 change_memory2
+4 T  1000 11170 11169  0  80   0 -  6524 signal pts/17   00:00:01 ls
+0 T  1000 11237  2454  0  80   0 -  1056 signal pts/17   00:00:00 change_memory1
+0 Z  1000 11238 11237  0  80   0 -     0 -      pts/17   00:00:00 ls <defunct>
+0 S  1000 11262  2454  0  80   0 -  1056 wait   pts/17   00:00:00 change_memory1
+0 Z  1000 11263 11262  0  80   0 -     0 -      pts/17   00:00:00 ls <defunct>
+0 S  1000 11264 11262  0  80   0 -  1127 wait   pts/17   00:00:00 sh
+4 R  1000 11265 11264  0  80   0 -  9009 -      pts/17   00:00:00 ps
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  2454  2445  0  80   0 -  7449 wait   pts/17   00:00:00 bash
+0 T  1000  9811  2454  0  80   0 -  1056 signal pts/17   00:00:00 adopted_process
+1 Z  1000  9812  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+1 Z  1000  9813  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+1 Z  1000  9814  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+1 Z  1000  9819  9811  0  80   0 -     0 -      pts/17   00:00:00 adopted_process <defunct>
+0 S  1000 10122  2454 21  80   0 - 169958 poll_s pts/17  00:05:45 gedit
+0 T  1000 11097  2454  0  80   0 -  1056 signal pts/17   00:00:00 change_memory2
+4 T  1000 11098 11097  0  80   0 -  6223 signal pts/17   00:00:01 ls
+0 T  1000 11169  2454  0  80   0 -  1056 signal pts/17   00:00:00 change_memory2
+4 T  1000 11170 11169  0  80   0 -  6524 signal pts/17   00:00:01 ls
+0 T  1000 11237  2454  0  80   0 -  1056 signal pts/17   00:00:00 change_memory1
+0 Z  1000 11238 11237  0  80   0 -     0 -      pts/17   00:00:00 ls <defunct>
+0 S  1000 11279  2454  0  80   0 -  1056 wait   pts/17   00:00:00 change_memory1
+0 Z  1000 11280 11279  0  80   0 -     0 -      pts/17   00:00:00 ls <defunct>
+0 S  1000 11281 11279  0  80   0 -  1127 wait   pts/17   00:00:00 sh
+4 R  1000 11282 11281  0  80   0 -  9009 -      pts/17   00:00:00 ps
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000 12190 12182  0  80   0 -  7442 wait   pts/17   00:00:00 bash
+0 S  1000 12274 12190  0  80   0 -  1056 wait   pts/17   00:00:00 change_memory1
+0 Z  1000 12275 12274  0  80   0 -     0 -      pts/17   00:00:00 ls <defunct>
+0 S  1000 12276 12274  0  80   0 -  1127 wait   pts/17   00:00:00 sh
+0 R  1000 12277 12276  0  80   0 -  9009 -      pts/17   00:00:00 ps

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=usr
+comment0.target=boolean\ join(IChatUser)
+comment1.params=usr
+comment1.target=boolean\ leave(IChatUser)
+comment2.params=msg
+comment2.target=void\ sendMessage(IChatMessage)
+comment3.params=
+comment3.target=IChatUser[]\ listUsers()
+comment4.params=
+comment4.target=java.lang.String\ getName()
+numComments=5

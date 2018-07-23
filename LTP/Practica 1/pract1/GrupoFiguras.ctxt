@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=f
+comment0.target=void\ anyadeFigura(Figura)
+comment1.params=c
+comment1.target=void\ anyadeCirculo(Circulo)
+comment2.params=t
+comment2.target=void\ anyadeTriangulo(Triangulo)
+comment3.params=r
+comment3.target=void\ anyadeRectangulo(Rectangulo)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=o
+comment5.target=int\ IndexOf(java.lang.Object)
+comment6.params=g
+comment6.target=boolean\ incluido(GrupoFiguras)
+comment7.params=o
+comment7.target=boolean\ equals(java.lang.Object)
+comment8.params=
+comment8.target=double\ area()
+comment9.params=
+comment9.target=double\ volumen()
+numComments=10

@@ -1,0 +1,11 @@
+TablaHash<Integer,Integer>th = new TablaHash<Integer,Integer>(40);
+for(int i = 1; i<=40;i++){th.insertar(i,2*i);}
+th.elArray.length
+
+107   (int)
+
+th.factorCarga()
+
+0.37383177570093457   (double)
+
+System.out.print(th.claves());

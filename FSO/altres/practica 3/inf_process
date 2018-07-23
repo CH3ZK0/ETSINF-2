@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pid=$(awk '/^Pid/ { print $2 }' /proc/$1/status)
+ppid=$(awk '/^PPid/ { print $2 }' /proc/$1/status)
+status=$(awk '/^Stat/ { print $2 }' /proc/$1/status)
+comando=$(cat /proc/$1/cmdline)
+
+echo -e "PID\tPPID\tSTATUS\tCOMANDO"
+echo -e "$pid\t$ppid\t$status\t$comando"

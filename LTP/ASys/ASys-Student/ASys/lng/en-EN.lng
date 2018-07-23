@@ -1,0 +1,196 @@
+@0000 = ASys - Assessment System
+@0001 = ASys
+@0002 = About
+@0003 = Help
+@0004 = English
+@0005 = Español
+@0006 = Exit
+@0007 = Create exercise
+@0008 = Create exercise...
+@0009 = Open exercise
+@0010 = Mark exercises
+@0011 = Recent exercises
+@0012 = Load exercise...
+@0013 = Language
+@0014 = English
+@0015 = Español
+@0016 = Français
+
+@0050 = Open instructions
+@0051 = Mark exercises
+@0052 = Open resources
+@0053 = View report
+@0054 = Generate test cases
+@0055 = Exit exercise
+@0056 = No projects found. Please place the projects you want to assess into the %s/Projects/Unmarked/ folder
+@0057 = Pending projects: %s / %s
+@0058 = Finished
+@0059 = Correct exercise
+@0060 = Mark exercises
+@0061 = Continue marking
+
+@0100 = Accept
+@0101 = Spain
+@0102 = Email
+@0103 = Phone
+@0104 = You can talk in English or Spanish
+@0105 = Developers
+@0106 = Coordinator
+
+@0150 = Create exercise
+@0151 = Load exercise
+@0152 = Load
+@0153 = Cancel
+@0154 = Path of the exercise
+@0155 = Exercise: %s
+
+@0200 = Back to menu
+
+@0251 = Congratulations. No errors detected
+@0252 = The corrected code can be found in: %s
+@0253 = The original code can be found in: %s
+@0254 = The solution code can be found in: %s
+
+@0300 = Filter by: 
+@0301 = Save mark report
+@0302 = Save mark report...
+@0303 = Text/excel files
+@0304 = Student
+@0305 = Mark
+@0306 = Final mark
+
+@0350 = Correct
+@0351 = Autocorrect
+@0352 = Close
+@0353 = Missing mark
+@0354 = Are you sure you want to continue without adding the mark?
+@0355 = Stop marking
+@0356 = Are you sure you want to stop marking?
+@0357 = You will lose
+@0358 = all your progress
+@0359 = the marks of this last student
+
+@0400 = Project code
+@0401 = Solution code
+@0402 = File not found
+@0403 = This file does not exist in the solution code
+
+@0450 = Mark: -
+@0451 = Comment:
+@0452 = Add
+@0453 = The introduced mark is wrong
+@0454 = The accepted format is (-)X.X
+@0455 = Wrong mark
+
+@0500 = Remove
+
+@0550 = Property: 
+
+@0600 = Mark of the project
+@0601 = Next project
+@0602 = Back to menu
+@0603 = The exercise fulfills all the properties and has passed all the tests
+@0604 = Exercise completed
+
+@0650 = Project %s out of %s
+@0651 = Loading...
+@0652 = Compilation error: %s
+@0653 = Property fail: %s
+@0654 = Test not passed: %s
+@0655 = Possible cause: %s
+
+@0700 = Save & generate template
+@0701 = Close
+@0702 = Generated successfully
+@0703 = The exercise has been generated
+@0704 = Changes not saved
+@0705 = Are you sure you want to exit without saving the changes?
+
+@0750 = Add array
+@0751 = Extract information
+@0752 = Modify code
+@0753 = Add test
+@0754 = Generate tests
+
+@0800 = This action affects several instructions
+@0801 = This will remove %s instructions
+@0802 = Do you want to continue?
+
+@0850 = XXXXXX
+
+@0900 = Type
+@0901 = Size
+
+@0950 = Modify
+@0951 = Accept
+@0952 = Remove
+
+@1000 = XXXXXX
+
+@1050 =  in 
+@1051 = XXXXXX
+@1052 = XXXXXX
+@1053 = XXXXXX
+
+@1100 = XXXXXX
+
+@1150 = Must exist
+
+@1200 = XXXXXX
+
+@1250 = Add new property
+@1251 = Remove property
+@1252 = Move property up
+@1253 = Move property down
+
+@1300 = Edit property
+@1301 = New property
+@1302 = Description: 
+@1303 = File: 
+@1304 = Hint: 
+@1305 = Maximum mark: 
+@1306 = Property
+@1307 = Hint
+@1308 = E.g.: Class Figure must contain a field of type Double
+@1309 = E.g.: Figure.java (Class Figure will be displayed when this property fails)
+@1310 = E.g.: Class Figure should contain a field of type Double
+@1311 = E.g.: 1.0 (this property has a value of 1.0 point)
+
+@1350 = XXXXXX
+
+@1400 = XXXXXX
+
+@1450 = Select instruction
+@1451 = Add method
+@1452 = Cancel
+@1453 = Instruction
+@1454 = Method
+
+@1500 = XXXXXX
+
+@1550 = XXXXXX
+
+@1600 = XXXXXX
+
+@1650 = XXXXXX
+
+@1700 = XXXXXX
+
+@1750 = XXXXXX
+
+@1800 = The code cannot be compiled
+@1801 = The code does not fulfill the property
+@1802 = The code does not pass the tests
+@1803 = Not assessed
+
+@1850 = Save template
+@1851 = Skip
+@1852 = Stop
+@1853 = Total
+
+@1900 = Class
+@1901 = Method
+@1902 = Test cases
+@1903 = Number of test cases to generate
+@1904 = Minutes
+@1905 = Minutes to generate all the test cases

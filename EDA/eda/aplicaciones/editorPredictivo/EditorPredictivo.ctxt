@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=EditorPredictivo()
+comment0.text=\r\n\ Constructor\ de\ un\ EditorPredictivo\ vacio\r\n
+comment1.params=nombreFichero
+comment1.target=EditorPredictivo(java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ un\ Editor\ Predictivo\ a\ partir\ de\ las\ palabras\ \r\n\ que,\ en\ orden\ alfabetico,\ contiene\ un\ fichero\ de\ texto\ a\ \r\n\ partir\ de\ su\ segunda\ linea,\ pues\ en\ su\ primera\ linea\ aparece\ \r\n\ el\ numero\ de\ palabras\ que\ almacena.\r\n\ @param\ nombreFichero\ Nombre\ del\ fichero\ de\ texto\ que\ contiene\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ las\ palabras\ a\ partir\ de\ las\ que\ se\ creara\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ el\ editor\ ordenadas\ alfabeticamente,\ junto\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ con\ su\ numero.\r\n
+comment2.params=nueva
+comment2.target=void\ incluir(java.lang.String)
+comment2.text=\ Anyade\ la\ palabra\ nueva\ a\ un\ Editor\ Predictivo.\r\n\ \ @param\ \ nueva\ \ Palabra\ a\ anyadir\ a\ las\ que\ ya\ tiene\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ un\ Editor\ Predictivo.\r\n
+comment3.params=nombreFichero
+comment3.target=void\ guardar(java.lang.String)
+comment3.text=\r\n\ Guarda\ en\ orden\ alfabetico\ las\ palabras\ de\ un\ Editor\ Predictivo\ \r\n\ a\ partir\ de\ la\ segunda\ linea\ de\ un\ fichero\ de\ texto,\ escribiendo\ \r\n\ su\ numero\ en\ la\ primera\ linea.\r\n\ @param\ nombreFichero\ Nombre\ del\ fichero\ de\ texto\ donde\ se\ guardaran\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ la\ talla\ y\ palabras\ en\ orden\ alfabetico\ de\ un\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Editor\ Predictivo.\r\n
+comment4.params=prefijo\ n
+comment4.target=librerias.estructurasDeDatos.modelos.ListaConPI\ recuperarSucesores(java.lang.String,\ int)
+comment4.text=\r\n\ Devuelve\ una\ ListaConPI\ con,\ como\ maximo,\ los\ n\ siguientes\ \r\n\ sucesores\ de\ prefijo;\ en\ el\ primer\ lugar\ de\ esta\ lista\ figurara\ \r\n\ el\ propio\ prefijo\ siempre\ y\ cuando\ sea\ ya\ una\ palabra\ del\ editor.\r\n\ @param\ \ prefijo\ \ Prefijo\ a\ partir\ del\ que\ se\ buscan\ los\ "n"\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ siguientes\ sucesores\r\n\ @param\ \ n\ \ \ \ \ \ \ \ Numero\ maximo\ de\ sucesores\ a\ recuperar\r\n\ @return\ ListaConPI<String>\ \ \ Lista\ Con\ Punto\ de\ Interes\ con\ los\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sucesores\ de\ prefijo\ obtenidos;\ su\ primer\ elemento\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ es\ el\ propio\ prefijo\ siempre\ y\ cuando\ sea\ ya\ una\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ palabra\ del\ editor.\r\n
+numComments=5

@@ -1,0 +1,18 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=668
+package.editor.height=400
+package.editor.width=875
+package.editor.x=848
+package.editor.y=276
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+target1.height=62
+target1.name=theantsproblem
+target1.type=PackageTarget
+target1.width=110
+target1.x=70
+target1.y=10

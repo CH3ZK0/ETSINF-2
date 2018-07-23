@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ServidorColaPrioridad()
+comment0.text=Crea\ un\ Servidor\ de\ Impresion\ vacio.
+comment1.params=t
+comment1.target=void\ insertar(Trabajo)
+comment1.text=\ Incluye\ un\ nuevo\ trabajo\ en\ espera\ t\ en\ un\ ServidorDeImpresion.\r\n\ \ @param\ t\ \ \ Trabajo\r\n
+comment2.params=
+comment2.target=boolean\ hayTrabajos()
+comment2.text=\ Comprueba\ si\ hay\ algun\ trabajo\ en\ espera\ en\ un\ ServidorDeImpresion.\r\n\ \ @return\ boolean\r\n
+comment3.params=
+comment3.target=Trabajo\ getTrabajo()
+comment3.text=\ SII\ hayTrabajos()\:\ devuelve\ el\ Trabajo\ de\ un\ ServidorDeImpresion\r\n\ \ que\ va\ a\ ser\ impreso.\r\n\ \ @return\ Trabajo\r\n
+comment4.params=
+comment4.target=int\ imprimirTrabajo()
+comment4.text=\ SII\ hayTrabajos()\:\ elimina\ de\ un\ ServidorDeImpresion\ el\ \r\n\ \ trabajo\ que\ va\ a\ ser\ impreso\ y\ devuelve\ el\ tiempo\ que\ \r\n\ \ este\ tardara\ en\ imprimirse,\ en\ base\ a\ la\ velocidad\ de\ la\ impresora.\r\n\ \ @return\ int\ (seg.)\r\n
+numComments=5

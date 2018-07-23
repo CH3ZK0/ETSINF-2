@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ anyade(java.lang.Object)
+comment0.text=inserta\ un\ nuevo\ elemento\ en\ el\ GrupoDe
+comment1.params=e
+comment1.target=boolean\ existe(java.lang.Object)
+comment1.text=Comprueba\ si\ existe\ un\ elemento\ en\ el\ GrupoDe
+comment2.params=
+comment2.target=int\ talla()
+comment2.text=Retorna\ el\ numero\ de\ elementos\ en\ el\ GrupoDe
+comment3.params=e
+comment3.target=java.lang.Object\ elimina(java.lang.Object)
+comment3.text=\ Elimina,\ solo\ si\ existe,\ un\ elemento\ del\ GrupoDe\ \n\ \ Devuelve\ el\ elemento\ si\ ha\ podido\ eliminarlo,\ \nnull\ en\ caso\ contrario
+comment4.params=
+comment4.target=boolean\ esVacio()
+comment4.text=Retorna\ si\ el\ GrupoDe\ esta\ vacio
+numComments=5

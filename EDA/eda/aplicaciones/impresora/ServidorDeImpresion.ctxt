@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=t
+comment0.target=void\ insertar(Trabajo)
+comment0.text=\ Inserta\ el\ Trabajo\ t\ en\ la\ cola\ de\ un\ ServidorDeImpresion.\r\n\ \ @param\ t\ \ \ Trabajo\r\n
+comment1.params=
+comment1.target=boolean\ hayTrabajos()
+comment1.text=\ Comprueba\ si\ hay\ algun\ Trabajo\ a\ imprimir\ en\ la\ cola\ de\r\n\ \ un\ ServidorDeImpresion.\r\n\ \ @return\ boolean\r\n
+comment2.params=
+comment2.target=Trabajo\ getTrabajo()
+comment2.text=\ SII\ hayTrabajos()\:\ devuelve\ el\ primer\ Trabajo\ en\ la\ \r\n\ \ cola\ de\ un\ ServidorDeImpresion,\ o\ trabajo\ a\ imprimir.\r\n\ \ @return\ Trabajo\r\n
+comment3.params=
+comment3.target=int\ imprimirTrabajo()
+comment3.text=\ SII\ hayTrabajos()\:\ elimina\ el\ primer\ trabajo\ en\ la\ cola\ \r\n\ \ de\ un\ ServidorDeImpresion\ para\ imprimirlo\ y\ devuelve\ el\ \r\n\ \ tiempo\ que\ tardara\ en\ imprimirse.\r\n\ \ @return\ int\ (seg.)\r\n
+numComments=4

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if test -f $1; then
+	rm $1
+	echo "Fichero eliminado"
+
+elif test -d $1; then
+	echo "El fichero $1 es un directorio, no se puede borrar"
+			
+else
+	echo "El fichero $1 no existe"
+	
+fi

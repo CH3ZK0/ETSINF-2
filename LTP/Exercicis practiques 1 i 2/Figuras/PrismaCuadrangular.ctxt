@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=cx\ cy\ lado\ altura
+comment0.target=PrismaCuadrangular(double,\ double,\ double,\ double)
+comment1.params=c\ altura
+comment1.target=PrismaCuadrangular(Cuadrado,\ double)
+comment2.params=
+comment2.target=double\ volumen()
+numComments=3

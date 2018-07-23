@@ -1,0 +1,19 @@
+
+//Declarar una variable global, el “spinlock” que utilitzaran tots els fils
+int clau = 0;
+
+// inicialment FALSE --> secció crítica NO està ocupada.
+Secció d’entrada: while(test_and_set(&clau));
+Secció de sortida: clau=0;
+
+
+
+int test_and_set(int *spinlock) {
+int ret;
+__asm__ __volatile__(
+"xchg %0, %1"
+: "=r"(ret), "=m"(*spinlock)
+: "0"(1), "m"(*spinlock)
+: "memory");
+return ret;
+}

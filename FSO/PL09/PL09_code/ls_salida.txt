@@ -1,0 +1,22 @@
+total 120
+drwxrwxr-x 2 x x 4096 dic 12 21:01 .
+drwxrwxr-x 3 x x 4096 nov 28 19:18 ..
+-rw-r--r-- 1 x x 4096 dic 12 20:53 ._a_pipe.c
+-rw-r--r-- 1 x x 1360 dic 14  2012 a_pipe.c
+-rwxrwxr-x 1 x x 8600 nov 28 19:31 descriptor
+-rw-r--r-- 1 x x 4096 dic 12 20:53 ._descriptor.c
+-rw-r--r-- 1 x x  607 nov 18 13:08 descriptor.c
+-rwxrwxr-x 1 x x 8520 nov 28 19:38 descriptor_out
+-rw-r--r-- 1 x x 4096 dic 12 20:53 ._descriptor_output.c
+-rw-r--r-- 1 x x  733 nov 18 13:15 descriptor_output.c
+-rwxrwxr-x 1 x x 8760 dic 12 21:00 ls_redir
+-rw-r--r-- 1 x x  744 dic 12 21:00 ls_redir.c
+-rwx------ 1 x x    0 dic 12 21:01 ls_salida.txt
+-rwx------ 1 x x   47 dic 12 20:23 messages.txt
+-rwx------ 1 x x   23 dic 12 20:39 output.txt
+-rwxrwxr-x 1 x x 8768 dic 12 20:39 redir_out
+-rw-r--r-- 1 x x 4096 dic 12 20:53 ._redir_output.c
+-rw-r--r-- 1 x x  622 nov 18 13:28 redir_output.c
+-rwxrwxr-x 1 x x 8680 dic 12 20:23 share
+-rw-r--r-- 1 x x 4096 dic 12 20:53 ._share_file.c
+-rw-r--r-- 1 x x  675 nov 18 13:16 share_file.c

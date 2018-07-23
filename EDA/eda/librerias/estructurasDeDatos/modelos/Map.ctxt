@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=c\ v
+comment0.target=java.lang.Object\ insertar(java.lang.Object,\ java.lang.Object)
+comment0.text=\ inserta\ la\ Entrada\ (c,v)\ en\ un\ Map\ y\ devuelve\ null;\ si\ ya\n\ \ existe\ una\ Entrada\ de\ Clave\ c\ en\ el\ Map,\ devuelve\ su\ valor\ \n\ \ asociado\ y\ lo\ substituye\ por\ v\ (o\ actualiza\ la\ Entrada)\n
+comment1.params=c
+comment1.target=java.lang.Object\ eliminar(java.lang.Object)
+comment1.text=\ elimina\ la\ Entrada\ con\ Clave\ c\ de\ un\ Map\ y\ devuelve\ su\ \n\ \ valor\ asociado,\ null\ si\ no\ existe\ una\ Entrada\ con\ dicha\ clave\n
+comment2.params=c
+comment2.target=java.lang.Object\ recuperar(java.lang.Object)
+comment2.text=\ devuelve\ el\ valor\ asociado\ a\ la\ clave\ c\ en\ un\ Map,\n\ \ null\ si\ no\ existe\ una\ Entrada\ con\ dicha\ clave\n
+comment3.params=
+comment3.target=boolean\ esVacio()
+comment3.text=comprueba\ si\ un\ Map\ esta\ vacio
+comment4.params=
+comment4.target=int\ talla()
+comment4.text=devuelve\ la\ talla,\ o\ numero\ de\ Entradas,\ de\ un\ Map
+comment5.params=
+comment5.target=ListaConPI\ claves()
+comment5.text=devuelve\ una\ ListaConPI\ con\ las\ talla()\ Claves\ de\ un\ Map
+numComments=6

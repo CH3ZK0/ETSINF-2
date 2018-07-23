@@ -1,0 +1,7 @@
+//Incloure les capçaleres de la llibreria de pthreads. Normalment ja està inclosa perquè estem utilitzant fils.
+#include <pthread.h>
+
+//Declarar una variable global, el “mutex” que utilitzaran tots els fils
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER; //Això ho declara i inicialitza.
+Sección d’entrada pthread_mutex_lock(&mutex);
+Sección de sortida pthread_mutex_unlock(&mutex);

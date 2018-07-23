@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="608.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Notas de IPC">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+            </Label>
+            <PieChart fx:id="pieChart" labelLineLength="15.0" legendVisible="false" prefHeight="300.0" VBox.vgrow="ALWAYS" />
+            <BarChart fx:id="barChart" legendVisible="false">
+              <xAxis>
+                <CategoryAxis animated="false" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis animated="false" minorTickVisible="false" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#sumar" text="Suspenso" />
+                  <Button mnemonicParsing="false" onAction="#sumar" text="Aprobado" />
+                  <Button mnemonicParsing="false" onAction="#sumar" text="Notable" />
+                  <Button mnemonicParsing="false" onAction="#sumar" text="Sobresaliente" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

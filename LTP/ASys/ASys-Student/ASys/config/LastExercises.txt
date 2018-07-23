@@ -1,0 +1,39 @@
+Name: Pilas (2)
+Path: C:\Users\mlurb\Desktop\Nueva carpeta\Pilas
+
+Name: Colas (3)
+Path: C:\Users\mlurb\Desktop\Nueva carpeta\Colas
+
+Name: Pilas
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Pilas
+
+Name: Metodos basicos
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Metodos basicos
+
+Name: Figuras
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Figuras
+
+Name: Colas (2)
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Colas
+
+Name: Boletin (2)
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Boletin
+
+Name: Desplazamiento (2)
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Desplazamiento
+
+Name: Vehiculos
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Vehiculos
+
+Name: Poliedros
+Path: D:\Universitat\2on Curs\Semestre A\LTP\Practiques\Exercicis practiques 1 i 2\Poliedros
+
+Name: Boletin
+Path: D:\Universitat\2on Curs\Semestre A\LTP\ASys\Ejercicios\Boletin
+
+Name: Desplazamiento
+Path: D:\Universitat\2on Curs\Semestre A\LTP\ASys\Ejercicios\Desplazamiento
+
+Name: Colas
+Path: D:\Universitat\2on Curs\Semestre A\LTP\ASys\Ejercicios\Colas
+

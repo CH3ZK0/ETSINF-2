@@ -1,0 +1,196 @@
+@0000 = ASys - Assessment System
+@0001 = ASys
+@0002 = Sobre
+@0003 = Ayuda
+@0004 = English
+@0005 = Español
+@0006 = Salir
+@0007 = Crear ejercicio
+@0008 = Crear ejercicio...
+@0009 = Abrir ejercicio
+@0010 = Puntuar ejercicios
+@0011 = Ejercicios recientes
+@0012 = Cargar ejercicio...
+@0013 = Idioma
+@0014 = English
+@0015 = Español
+@0016 = Français
+
+@0050 = Abrir instrucciones
+@0051 = Puntuar ejercicios
+@0052 = Abrir recursos
+@0053 = Ver informe
+@0054 = Generar casos de test
+@0055 = Salir del ejercicio
+@0056 = No se ha encontrado ningún proyecto. Por favor, colóquelos en la carpeta %s/Projects/Unmarked/ para poder corregirlos
+@0057 = Proyectos pendientes: %s / %s
+@0058 = Terminado
+@0059 = Corregir ejercicio
+@0060 = Puntuar ejercicios
+@0061 = Continuar puntuando
+
+@0100 = Aceptar
+@0101 = España
+@0102 = E-mail
+@0103 = Teléfono
+@0104 = Puedes hablar en Inglés o Español
+@0105 = Desarrolladores
+@0106 = Coordinador
+
+@0150 = Crear ejercicio
+@0151 = Cargar exercise
+@0152 = Cargar
+@0153 = Cancelar
+@0154 = Ruta del ejercicio
+@0155 = Ejercicio: %s
+
+@0200 = Salir al menú
+
+@0251 = Enhorabuena. No se detectaron errores
+@0252 = El código corregido está en: %s
+@0253 = El código original está en: %s
+@0254 = El codigo del profesor está en: %s
+
+@0300 = Filtrar por: 
+@0301 = Guardar notas
+@0302 = Guardar notas...
+@0303 = Archivos de texto/excel
+@0304 = Alumno
+@0305 = Nota
+@0306 = Nota final
+
+@0350 = Corregir
+@0351 = Autocorregir
+@0352 = Cerrar
+@0353 = Falta la nota
+@0354 = ¿Estás seguro de querer continuar sin añadir la nota?
+@0355 = Dejar de puntuar
+@0356 = ¿Estás seguro de querer dejar de puntuar?
+@0357 = Perderás
+@0358 = todo tu progreso
+@0359 = las puntuaciones de este último alumno
+
+@0400 = Código original
+@0401 = Código del profesor
+@0402 = Fichero no encontrado
+@0403 = Este archivo no existe en la solución del profesor
+
+@0450 = Nota: -
+@0451 = Comentario:
+@0452 = Añadir
+@0453 = La nota introducida es incorrecta
+@0454 = El formato aceptado es (-)X.X
+@0455 = Nota incorrecta
+
+@0500 = Borrar
+
+@0550 = Propiedad: 
+
+@0600 = Nota del proyecto
+@0601 = Siguiente proyecto
+@0602 = Volver al menú
+@0603 = El ejercicio satisface todas las propiedades y ha pasado todos los tests
+@0604 = Ejercicio completado
+
+@0650 = Proyecto %s de %s
+@0651 = Cargando...
+@0652 = Error de compilación: %s
+@0653 = Propiedad fallida: %s
+@0654 = Test no pasado: %s
+@0655 = Posible causa: %s
+
+@0700 = Guardar y generar plantilla
+@0701 = Cerrar
+@0702 = Generado correctamente
+@0703 = El ejercicio se ha generado correctamente
+@0704 = Cambios no guardados
+@0705 = ¿Está seguro de que quiere salir sin guardar los cambios?
+
+@0750 = Añadir array
+@0751 = Extraer información
+@0752 = Modificar código
+@0753 = Añadir caso de prueba
+@0754 = Generar casos de prueba
+
+@0800 = Esta acción afecta a varias instrucciones
+@0801 = Esto borrará %s instrucciones
+@0802 = ¿Desea continuar?
+
+@0850 = XXXXXX
+
+@0900 = Tipo
+@0901 = Tamaño
+
+@0950 = Modificar
+@0951 = Acceptar
+@0952 = Borrar
+
+@1000 = XXXXXX
+
+@1050 =  en 
+@1051 = XXXXXX
+@1052 = XXXXXX
+@1053 = XXXXXX
+
+@1100 = XXXXXX
+
+@1150 = Debe existir
+
+@1200 = XXXXXX
+
+@1250 = Nueva propiedad
+@1251 = Borrar propiedad
+@1252 = Subir propiedad
+@1253 = Bajar propiedad
+
+@1300 = Editar propiedad
+@1301 = Nueva propiedad
+@1302 = Descripción: 
+@1303 = Archivo: 
+@1304 = Consejo: 
+@1305 = Nota máxima: 
+@1306 = Propiedad
+@1307 = Mensaje de error
+@1308 = P.e.: La clase Figura debe contener un atributo de tipo double
+@1309 = P.e.: Figura.java (La clase Figura será mostrada cuando esta propiedad falle)
+@1310 = P.e.: La clase Figura debería contener un atributo de tipo double
+@1311 = P.e.: 1.0 (esta propiedad vale 1.0 punto)
+
+@1350 = XXXXXX
+
+@1400 = XXXXXX
+
+@1450 = Seleccionar instrucción
+@1451 = Añadir método
+@1452 = Cancelar
+@1453 = Instrucción
+@1454 = Método
+
+@1500 = XXXXXX
+
+@1550 = XXXXXX
+
+@1600 = XXXXXX
+
+@1650 = XXXXXX
+
+@1700 = XXXXXX
+
+@1750 = XXXXXX
+
+@1800 = El código no compila
+@1801 = El código no cumple la propiedad
+@1802 = El código no pasa los tests
+@1803 = No evaluado
+
+@1850 = Guardar template
+@1851 = Saltar
+@1852 = Parar
+@1853 = Total
+
+@1900 = Clase
+@1901 = Método
+@1902 = Casos de test
+@1903 = Número de casos de test a generar
+@1904 = Minutos
+@1905 = Minutos para generar todos los casos de test

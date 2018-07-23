@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo El numero de argumentos es: $# 
+echo La orden tecleada es: $0 $@ 
+echo Lista de argumentos:
+for i in $@ 
+do
+echo $i 
+done

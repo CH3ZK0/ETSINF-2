@@ -1,0 +1,23 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=668
+package.editor.height=400
+package.editor.width=560
+package.editor.x=1132
+package.editor.y=267
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+target1.height=62
+target1.name=implementacionesDeModelos
+target1.type=PackageTarget
+target1.width=230
+target1.x=180
+target1.y=100
+target2.height=62
+target2.name=modelos
+target2.type=PackageTarget
+target2.width=80
+target2.x=70
+target2.y=100

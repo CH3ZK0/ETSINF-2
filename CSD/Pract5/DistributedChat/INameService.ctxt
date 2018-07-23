@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=name\ obj
+comment0.target=void\ bind(java.lang.String,\ java.rmi.Remote)
+comment1.params=name\ obj
+comment1.target=void\ rebind(java.lang.String,\ java.rmi.Remote)
+comment2.params=name
+comment2.target=void\ unbind(java.lang.String)
+comment3.params=name
+comment3.target=java.rmi.Remote\ resolve(java.lang.String)
+numComments=4

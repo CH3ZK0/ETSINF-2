@@ -1,0 +1,127 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-mar-2016, 20:30:54
+    Author     : jose
+*/
+
+/* Table text should always be white */ 
+
+.table-cell {
+    -fx-text-fill: black;
+    -fx-font-size: 24px;
+    -fx-padding: 5;
+    -fx-border-insets: 5;
+  
+}
+
+.cantidadColumna{
+     -fx-alignment: CENTER_RIGHT;
+}
+
+
+/* Formato para la columna de las categorias */ 
+.categoriaColumna{
+
+    -fx-base: rgb(0,0,0,0);
+    -fx-background-color: 
+        linear-gradient( to top, derive(-fx-color, 35.77966101694915%) 0%, derive(-fx-color, 10.05084745762713%) 50%, derive(-fx-color, -8.559322033898283%) 50.5%, derive(-fx-color, -30.0%) 100%);                   
+    -fx-alignment: CENTER;
+
+}
+
+.row-mayor-cero{
+    -fx-background-color: radial-gradient(radius 270%, burlywood, derive(burlywood, -30%), derive(burlywood, 30%));   
+/*     -fx-background-color: #33cc00        ;*/
+    
+}
+.row-menor-cero{
+    -fx-background-color:  radial-gradient(radius 270%, red, derive(red, -30%), derive(red, 30%))    ; 
+}
+/* Style for default table rows */ 
+.defaultTableStyle { 
+    -fx-font-size: 18px;
+    -fx-base: rgb(0,0,0,0);
+    -fx-background-color: 
+        linear-gradient( to top, derive(-fx-color, 35.77966101694915%) 0%, derive(-fx-color, 10.05084745762713%) 50%, derive(-fx-color, -8.559322033898283%) 50.5%, derive(-fx-color, -30.0%) 100%);                   
+/*    -fx-background-color: rgba(0,0,0,.75);        */
+    -fx-border-color: gray;
+    -fx-border-width: 0px;
+}
+
+
+.itemAsignado { 
+    -fx-font-size: 14px;
+    -fx-base: rgb(0,0,0,0);
+    -fx-background-color: bisque;
+    -fx-border-color: gray;
+/*    -fx-border-width: 1 1 0 0;*/
+     -fx-border-width: 0px;
+
+
+}
+/* Format for row where a plan has not yet been assigned */
+.itemNoAsignado { 
+    -fx-font-size: 14px;
+    -fx-base: rgb(0,0,0,0);
+    -fx-background-color: #cccccc;
+    -fx-border-color: gray;
+    /*    -fx-border-width: 1 1 0 0;*/
+    -fx-border-width: 0px;
+
+}
+.table-row-cell:hover
+{
+    /*-fx-background-color: #fff269;*/
+    -fx-background-color:radial-gradient(radius 270%, gray, derive(yellowgreen, -30%), derive(gray, 30%));  
+}
+/* formato para las celdas del tableview
+.table-cell {     
+    -fx-padding: 0.5em 0.5em 0.1em 0.3em;
+    -fx-border-color: -fx-box-border -fx-box-border transparent transparent;  
+    -fx-font: 13px "Segoe UI";    
+    -fx-border-insets: 0;
+}*/
+
+
+/*// color para filas vacias, 
+// aplicar el mismo color cuando el raton este sobre una celda de una fila vacia  */
+.table-row-cell:empty, .table-cell:empty:hover {
+    -fx-background-color: whitesmoke;
+}
+ 
+/*// eliminar borde de celdas en las filas vacias*/
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+/* / centrar y cambiar color de los titulos de columnas*/
+.table-view .column-header .label{
+    -fx-text-fill: #52677A;
+    -fx-alignment: CENTER;
+    -fx-font-size: 18px
+}
+
+/*// color de fondo del titulo de columna cuando en roton esta sobre ella*/
+.table-view .column-header:hover {
+    -fx-background-color: whitesmoke;
+}
+
+/*// tamaño, bordes y color de fondo de los titulos*/
+/*.table-view .column-header, .table-view .filler {
+    -fx-background-color: white;    
+    -fx-size: 45;
+    -fx-border-color: -fx-box-border;
+    -fx-border-width: 0 1 3 0;
+    -fx-border-insets: 0;
+}*/
+
+/*// hacer transparente el fondo de los titulos*/
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
